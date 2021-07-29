@@ -7,7 +7,7 @@ from xml.dom import minidom
 app = typer.Typer()
 
 
-def make_dynamic(element, key, parameter=False):
+def make_dynamic(element, key):
     id = element.get("id").split(".")[0]
     if key is None:
         value = element.text
@@ -16,6 +16,7 @@ def make_dynamic(element, key, parameter=False):
     else:
         value = element.get(key)
         if "$" in value:
+            # Don't replace defaults that are already set
             # value = value.replace("$", "\$")
             return None
         if "=" in value:
@@ -31,7 +32,7 @@ def make_all_dynamic(element):
     for key in filter(lambda k: k != "id", element.keys()):
         make_dynamic(element, key)
     if element.tag == "parameter":
-        make_dynamic(element, None, True)
+        make_dynamic(element, None)
 
 
 @app.command()
