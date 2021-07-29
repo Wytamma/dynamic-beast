@@ -1,9 +1,13 @@
 # Dynamic BEAST
 
+[![PyPi](https://img.shields.io/pypi/v/dynamic-beast.svg)](https://pypi.org/project/dynamic-beast/)
+[![tests](https://github.com/Wytamma/dynamic-beast/actions/workflows/test.yml/badge.svg)](https://github.com/Wytamma/dynamic-beast/actions/workflows/test.yml)
+[![cov](https://codecov.io/gh/Wytamma/dynamic-beast/branch/master/graph/badge.svg)](https://codecov.io/gh/Wytamma/dynamic-beast)
+
 This command line tool can be used to create a dynamic version of BEAST 2 XML files. This dynamic XML file can be used to set BEAST parameters at runtime, which can be useful for testing different configurations or quickly modifying parameters without having to edit the XML file. 
 
 ## Install
-Install `dynamic-beast` with pip (requires python -V >=3.6.2).
+Install `dynamic-beast` with pip (requires python -V >= 3.6.2).
 
 ```
 pip install dynamic-beast
