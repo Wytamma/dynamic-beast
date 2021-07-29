@@ -3,7 +3,7 @@ from typer.testing import CliRunner
 import xml.etree.ElementTree as ET
 
 def test_version():
-    assert __version__ == '0.1.0'
+    assert __version__ == '1.1.0'
 
 runner = CliRunner()
 

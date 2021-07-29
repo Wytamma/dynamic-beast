@@ -181,11 +181,11 @@
                         
             			</tree>			
                     
-            			<parameter id="clockRate.c:klebsiella_snps_no_outliers" spec="$(clockRate.spec=parameter.RealParameter)" name="$(clockRate.name=stateNode)">$(clockRate.None=1.0)</parameter>			
+            			<parameter id="clockRate.c:klebsiella_snps_no_outliers" spec="$(clockRate.spec=parameter.RealParameter)" name="$(clockRate.name=stateNode)">$(clockRate=1.0)</parameter>			
                     
-            			<parameter id="popSize.t:klebsiella_snps_no_outliers" spec="$(popSize.spec=parameter.RealParameter)" name="$(popSize.name=stateNode)">$(popSize.None=0.3)</parameter>			
+            			<parameter id="popSize.t:klebsiella_snps_no_outliers" spec="$(popSize.spec=parameter.RealParameter)" name="$(popSize.name=stateNode)">$(popSize=0.3)</parameter>			
                     
-            			<parameter id="gammaShape.s:klebsiella_snps_no_outliers" spec="$(gammaShape.spec=parameter.RealParameter)" name="$(gammaShape.name=stateNode)">$(gammaShape.None=1.0)</parameter>			
+            			<parameter id="gammaShape.s:klebsiella_snps_no_outliers" spec="$(gammaShape.spec=parameter.RealParameter)" name="$(gammaShape.name=stateNode)">$(gammaShape=1.0)</parameter>			
                 
         		</state>		
             
@@ -193,7 +193,7 @@
                     
             			<populationModel id="ConstantPopulation0.t:klebsiella_snps_no_outliers" spec="$(ConstantPopulation0.spec=ConstantPopulation)">				
                             
-                				<parameter id="randomPopSize.t:klebsiella_snps_no_outliers" spec="$(randomPopSize.spec=parameter.RealParameter)" name="$(randomPopSize.name=popSize)">$(randomPopSize.None=1.0)</parameter>				
+                				<parameter id="randomPopSize.t:klebsiella_snps_no_outliers" spec="$(randomPopSize.spec=parameter.RealParameter)" name="$(randomPopSize.name=popSize)">$(randomPopSize=1.0)</parameter>				
                         
             			</populationModel>			
                 
@@ -221,7 +221,7 @@
                                     
                     					<Exponential id="Exponential.0" name="$(Exponential.name=distr)">						
                                             
-                        						<parameter id="RealParameter.0" spec="$(RealParameter.spec=parameter.RealParameter)" estimate="$(RealParameter.estimate=false)" name="$(RealParameter.name=mean)">$(RealParameter.None=1.0)</parameter>						
+                        						<parameter id="RealParameter.0" spec="$(RealParameter.spec=parameter.RealParameter)" estimate="$(RealParameter.estimate=false)" name="$(RealParameter.name=mean)">$(RealParameter=1.0)</parameter>						
                                         
                     					</Exponential>					
                                 
@@ -241,9 +241,9 @@
                                     
                     					<siteModel id="SiteModel.s:klebsiella_snps_no_outliers" spec="$(SiteModel.spec=SiteModel)" gammaCategoryCount="$(SiteModel.gammaCategoryCount=4)" shape="$(SiteModel.shape=@gammaShape.s:klebsiella_snps_no_outliers)">						
                                             
-                        						<parameter id="mutationRate.s:klebsiella_snps_no_outliers" spec="$(mutationRate.spec=parameter.RealParameter)" estimate="$(mutationRate.estimate=false)" name="$(mutationRate.name=mutationRate)">$(mutationRate.None=1.0)</parameter>						
+                        						<parameter id="mutationRate.s:klebsiella_snps_no_outliers" spec="$(mutationRate.spec=parameter.RealParameter)" estimate="$(mutationRate.estimate=false)" name="$(mutationRate.name=mutationRate)">$(mutationRate=1.0)</parameter>						
                                             
-                        						<parameter id="proportionInvariant.s:klebsiella_snps_no_outliers" spec="$(proportionInvariant.spec=parameter.RealParameter)" estimate="$(proportionInvariant.estimate=false)" lower="$(proportionInvariant.lower=0.0)" name="$(proportionInvariant.name=proportionInvariant)" upper="$(proportionInvariant.upper=1.0)">$(proportionInvariant.None=0.0)</parameter>						
+                        						<parameter id="proportionInvariant.s:klebsiella_snps_no_outliers" spec="$(proportionInvariant.spec=parameter.RealParameter)" estimate="$(proportionInvariant.estimate=false)" lower="$(proportionInvariant.lower=0.0)" name="$(proportionInvariant.name=proportionInvariant)" upper="$(proportionInvariant.upper=1.0)">$(proportionInvariant=0.0)</parameter>						
                                             
                         						<substModel id="JC69.s:klebsiella_snps_no_outliers" spec="$(JC69.spec=JukesCantor)"/>						
                                         

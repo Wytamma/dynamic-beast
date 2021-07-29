@@ -10,7 +10,7 @@ def make_dynamic(element, key, parameter=False):
     id = element.get('id').split('.')[0]
     if key is None:
       value = element.text
-      s = f"{id}.{key}={value}"
+      s = f"{id}={value}"
       element.text = f"$({s})"
     else:
       value = element.get(key)

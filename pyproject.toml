@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "dynamic-beast"
-version = "1.0.0"
+version = "1.1.0"
 description = ""
 authors = ["Wytamma Wirth <wytamma.wirth@me.com>"]
 readme = "README.md"

@@ -1,2 +1,4 @@
 /.pytest_cache
 /dist
+/*.pyc
+*/__pycache__/*
