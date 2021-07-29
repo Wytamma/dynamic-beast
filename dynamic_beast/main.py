@@ -16,7 +16,8 @@ def make_dynamic(element, key, parameter=False):
     else:
         value = element.get(key)
         if "$" in value:
-            value = value.replace("$", "\$")
+            # value = value.replace("$", "\$")
+            return None
         if "=" in value:
             # https://github.com/CompEvol/beast2/blob/4d95f0095d20a6999d2757299c629bfbbf14b94b/src/beast/util/XMLParser.java#L372
             # the way that defaults are passed means you can't use '=' in there values...
