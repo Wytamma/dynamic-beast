@@ -317,7 +317,7 @@
                 
         		</logger>		
             
-        		<logger id="treelog.t:klebsiella_snps_no_outliers" spec="$(treelog.spec=Logger)" fileName="$(treelog.fileName=\$(tree).trees)" logEvery="$(treelog.logEvery=1000)" mode="$(treelog.mode=tree)">			
+        		<logger id="treelog.t:klebsiella_snps_no_outliers" spec="$(treelog.spec=Logger)" fileName="$(tree).trees" logEvery="$(treelog.logEvery=1000)" mode="$(treelog.mode=tree)">			
                     
             			<log id="TreeWithMetaDataLogger.t:klebsiella_snps_no_outliers" spec="$(TreeWithMetaDataLogger.spec=beast.evolution.tree.TreeWithMetaDataLogger)" tree="$(TreeWithMetaDataLogger.tree=@Tree.t:klebsiella_snps_no_outliers)"/>			
                 
