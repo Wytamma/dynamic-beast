@@ -30,8 +30,8 @@ beast dynamic_BEAST.xml
 To modify parameters at runtime use the `beast` definitions option `-D`.
 
 ```bash
-# change the ChainLength to 1000. 
-beast -D 'mcmc.ChainLength=1000' dynamic_BEAST.xml
+# change the chain length to 1000. 
+beast -D 'mcmc.chainLength=1000' dynamic_BEAST.xml
 ``` 
 
 Multiple definitions can be passed at the same time.
