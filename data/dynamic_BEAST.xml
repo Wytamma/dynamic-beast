@@ -1,0 +1,330 @@
+<?xml version="1.0" ?><beast beautitemplate="Standard" beautistatus="" namespace="beast.core:beast.evolution.alignment:beast.evolution.tree.coalescent:beast.core.util:beast.evolution.nuc:beast.evolution.operators:beast.evolution.sitemodel:beast.evolution.substitutionmodel:beast.evolution.likelihood" required="" version="2.6">	
+        
+    	<data id="klebsiella_snps_no_outliers" spec="Alignment" name="alignment">		
+                                
+        		<sequence id="seq_101BO_2012.0" spec="Sequence" taxon="101BO_2012.0" totalcount="4" value="ccctccgctacgcgcacccccccattcccacgccgtccggatgggaagctttagcaaccgttgcgtatccgcctagcgtctgggcccagcagtgggatagcccctggcgagaccgccccgtggtgcttccaattatgcacgtctccggtgggagtctggagccccgtcccgatccacagtgcgtccgccctactacatacccgagaagcgacgcgggacctctctgttccatgtcgagacggccttcgaccagtaagcgccgcactcgccgggcaccccctggtcagccgtgcttcgcaacacttccttgctcggacgcggacggaatgcccggcgaagaacaagcgggggcagggggtaattatcagacgaaagaaaagctcttaagcctcagcgcgtcggcgcgtggcagcggcggagccatacggggactgct"/>		
+                                
+        		<sequence id="seq_102BO_2012.0" spec="Sequence" taxon="102BO_2012.0" totalcount="4" value="ccctccgctacgcgcacccccccattcccacgccgtccggatgggaagctttatcaaccgttgcgtatccgcctagcgtctgggcccagcagtgggatagcccctggcgagaccgccccttggtgcttccaattatgcacgtctccggggggagtctggagccccgtcccgatccacagtgcgtctgccctactacatacccgagaagcgacgcgggacctctctgttccatgtcgagacggccttcgaccagcaagcgccgcactcgccgagcgccccctggtcagccgtgcttcgcaacacttccttgctcggacccggggggaatgcccggcgaagaacaagcgggggcaggggggaattatcagacgaaagaagagctcttaagcctcagcgcgtcggcgcgtggcagcggcggagccatacggggactgct"/>		
+                                
+        		<sequence id="seq_103BO_2012.0" spec="Sequence" taxon="103BO_2012.0" totalcount="4" value="ccctccgctacgcgcacccccccattcccacgccgtccggatgggaagctttagcaaccgttgcgtatccgcctagcgtctgggcccagcagtgggatagcccctggcgagaccgccccttggtgcttccaattatgcacgtctccggtgggagtctggagccccgtcccgatccacagtgcgtccgccctactacatacccgagaagcgacgcgggacctctctgttccatgtcgagacggccttcgaccagtaagcgccgcactcgccgggcgccccctggtcagccgtgcttcgcaacacttccttgctcggacccggacggaatgcccggcgaagaacaagcgggggcagggggtaattatcagacgaaagaaaagctcttaagcctcagcgcgtcggcgcgtggcagcggcggagccatacggggactgct"/>		
+                                
+        		<sequence id="seq_104BO_2012.0" spec="Sequence" taxon="104BO_2012.0" totalcount="4" value="ccctccgctacgcgcacccccccattcccacgccgtccggatgggaagctttagcaaccgttgcgaatccgcctagcgtctgggcccagcagtgagatagcccctggcgagaccgccccttggtgcttccaattatgcacgtctccggggggagtctggagccccgtcccgatccacagtgcgtccgccctactacatacccgagaagcgacgcgggacctctctgttccatgtcgagacggccttcgaccagtaagcgccgcactcgccgggcgccccctggtcagccgtgcttcgcaacacttccctgctcggacccggggggaatgcccggcgaagaacaagcgggggcagggggtaattatcagacgaaagaaaagctcttaagcctcggcgcgtcggcgcgtggcagcggcggagccatacggggactgct"/>		
+                                
+        		<sequence id="seq_11PV_2013.0" spec="Sequence" taxon="11PV_2013.0" totalcount="4" value="ccctccgctacgcgcacccccccattcccacgccgtccggatgggaagctttagcaactgttgcgtacccgccgagcgtctgggcccagcactgggatagcacctggcgagaccgccccttggtgcttccaattatgcacgtctccggggggagtctggagccccgtcctgatccacagtgcttccgcccgactacatacccgagaagtgacgcgggacttctcttttccatgtcgagacggcctttgacaagtaagcgccgcacttgccgggcgccccctggtcagccctgcttcaccacacttccttgttcggacccggggggaagacccggcgaagaataagcgggggtagggggtagttatcagacgaaagaaaagctcttaagcttcagcgcgacggcgcgtggcagcggcggagccataaggggactgct"/>		
+                                
+        		<sequence id="seq_12PV_2013.0" spec="Sequence" taxon="12PV_2013.0" totalcount="4" value="ccctccgctacgcgcacccccccattcccacgccgtccggatgggaagctttagcaactgttgcgtacccgccgagcgtctgggcccagcactgggatagcacctggcgagaccgccccttggtgcttccaattatgcacgtctccggggggagtctggagccccgtcctgatccacagtgcttccgcccgactacatacccgagaagtgacgcgggacttctcttttccatgtcgagacggcctttgggaagtaagcgccgcactcgccgggcgccccctggtcagccctgcttcaccacacttccttgttcggacccggggggaagacccggcgaagaataagcaggggtagggggtagttatcagacgaaagaaaagctcttcagcttcagcgcgacggcgcgtggcagcggcggagccataaggggactgct"/>		
+                                
+        		<sequence id="seq_13PV_2013.0" spec="Sequence" taxon="13PV_2013.0" totalcount="4" value="ccctccgctacgcgcacccccccattcccacgccgtccggatgggaagctttagcaactgttgcgtacccgccgagcgtctgggcccagcactgggatagcacctggcgagaccgccccttggtgcttccaattatgcacgtctccggggggagtctggagccccgtcctgatccacagtgcttccgcccgactacatacccgagaagtgacgcgggacttctcttttccatgtcgagacggcctttgacaagtaagcgccgcactcgccgggcgccccctggtcagccctgcttcaccacacttccttgttcggacccggggggaagacccggcgaagaataagcgggggtagggggtagttatcagacgaaagaaaagctcttaagcttcagcgcgacggcgcgtggcagcggcggagccataaggggactgct"/>		
+                                
+        		<sequence id="seq_23PV_2013.0" spec="Sequence" taxon="23PV_2013.0" totalcount="4" value="ccctccgctacgcgcacccccccattcccacgccgtccggatgggaagctttagcaactgttgcgtacccgccgagcgtctgggcccagcactgggatagcacctggcgagaccgccccttggtgcttccaactatgcacgtctccggggggagtctggagccccgtcctgatccacagtgctggcgcccgactacatgcccgagaagtgacgcgggacttctcttttccatgtcgagacggcctttgacaagtaagcgccgctctcgccgggcgccccctggtcagccctgcttcaccacacttccttgttcggacccggggggaagacccggcgaagaataagcgggggtagggggtagttatcagacgaaagaaaagctcttaagcttcagcgcgacggcgcgtggcagcggcggagccataaggggactgct"/>		
+                                
+        		<sequence id="seq_24PV_2013.0" spec="Sequence" taxon="24PV_2013.0" totalcount="4" value="ccctccgctacgcgcacccccccattcccacgccgtccggatgggaagctttggcaaccgttgcgtacccgccgagcgtctgggccgagcactgggatagcacctggcgagaccgccccttggtgcttccaattatgcacgtctccggggggagtctggagccccgtcctgattcacagtgcttccgcccgactacatacccgagaagtgacgcgggacttctcttttccatgtcgagacggcctttgacaagtaagcgccgcactcgccgggcgccccctggtcagccctgcttcgccacacttccttgttcggacccggggggaagacccgtcgaagaacaagcgggggtagggggtagttatcagacgaaagaaaagctcttaagcttcagcgcatcggcgcgtggcagcggcggagccataaggggactgct"/>		
+                                
+        		<sequence id="seq_25BO_2013.0" spec="Sequence" taxon="25BO_2013.0" totalcount="4" value="ccctcccccacgcgcgcccccccattcccacgccgtctggatgggaagcttcagcaaccgttgcgtacccgtcgagcgtctggacacagcactgggatagtacctgtcgagaccgccccttggtgcttccaattatgcacgtctccggggggagtctggagccccgtcccggtccatagtgcgtccgcccgactacatacccgaggagcgacgcgggacctctcttttccatgtcgagacggcccacgaccagtaagcggcgcactcgccgggcgccccctggtcagccgtgcttcgtcacacttccttgctcggacccggggggagtgcccggcgaagaacaagcgggggcagggggtagttatcagacgaaagaaaagctcttaagcctcagcgtgtcggcgcgtggcagcgtcggagccatacaggggctgct"/>		
+                                
+        		<sequence id="seq_26BO_2013.0" spec="Sequence" taxon="26BO_2013.0" totalcount="4" value="ccctccgctacccgcacccccccattcccacgccgtacggatgggaagctttagcaaccattgcgtttccaccgagcgtctgggcccagcactgggaaagcacctggcgagaccgccccttggtgcttccaattgtgcacgtctccggggggagtctggagctccatcccgatccacagtgcgtccgccctagtacatacccgagaagcgacgagggacctctcttttccgtggcgagacggccttcgaccagtaagcgccgcactcgccaggcgccccctggtcagccgtgcttcgccacacttccttgctcggacccggggggaatgcccggcgaagaacaagcgggggcagggggtaattatcatactaaagaaaagctcttaagcctcagcgcgtcggcgcgtggcagctgcggagccatacggggactgct"/>		
+                                
+        		<sequence id="seq_27BO_2011.0" spec="Sequence" taxon="27BO_2011.0" totalcount="4" value="tcctccgctacgcgcacccccccattcccacgccgtccgaatgggaagctgtagcaaccgttgcgtacccgccgagcgtctgggcccagcactgggatagcacctggcgagaccgccccttggtgcttccaattatgcacgtctccggggggagtcttgagtccggtcctgatccacagtgcttccacccgactacatacccgagaagcggcgcgggacctctcttttctacgtcgatacggccttcgaccagtaggcgccgcaatcaccgggcgccccctggtcaaacgtgcttagccacacttccttgctcggacccggggggaagacccggcgaagaacaagcggggtcagggggtagttatcagacgaaagaaaagctcttaagcctcagcgcgtcggcgcgtggcagcggcggagccatacggggactgca"/>		
+                                
+        		<sequence id="seq_28BO_2011.0" spec="Sequence" taxon="28BO_2011.0" totalcount="4" value="ccctccgctacgcgcacccccccattcccacgccgtccgaatgggaagctttagcaaccgttgcgtacccgccgagcgtctgggcccagcactgggatagcacctggcgagaccgccccttggtgcttccaattatgcacgtctccggggggagtcttgagtccggtcctgatccacagagcttccacccgactacatacccgagaagcgacgcgggacctctcttttctatgtcgagacggccttcgaccagtaggcgccgcactcaccgggcgccccctggtcaaacgtgcttcgccacacttccttgctcggacccggggggaagacccggcgaagaacaagcgggggcagggggtagttatcagacgaaagaaaagctcttaagcctcagcgcgtcggcgcgtggcagtggcggagccatacggggactgca"/>		
+                                
+        		<sequence id="seq_29BO_2012.0" spec="Sequence" taxon="29BO_2012.0" totalcount="4" value="ccctcccccacgcgcgcccccccattcccacgccgtctggatgggaagcttcagcaaccgttgcgtacccgccgagcgtctgggcacagcactgggataatacctgtcgagaccgccctttggtgcttccaattatgcacgtctccggggggagtctggagccccgtcccggtccacagtgcgtccgcccgactacatacccgaggagcgacgcgcgacctctcctttccatgtcgagacggcccacgaccagtaagcggcgcactcgccgggcgccccctggtcagccgtgcttcgtcacacttccttgctcggacccggggggagtgcccggcgaagaacaagcgggggcagggggtagttatcagacgaaagaaaagctcttaagcctcagcgtgtcggcgcgtggcagcgtcggagccatacgggggctgct"/>		
+                                
+        		<sequence id="seq_30BO_2012.0" spec="Sequence" taxon="30BO_2012.0" totalcount="4" value="ccctccgctacgcgcacccccccattcccacgccgtccggatgggaagctttagcaaccgttgcgaatccgcctagcgtctgggcccagcagtgggatagcccctggcgagaccgccccttggtgcttccaattatgcacgtctccggggggagtctggagccccgtcccgatccacagtgcgtccgccctactacatacccgagaagcgacgcgggacctctctgttccatgtcgagacggccttcgaccagtaagcgccgcactcgccgggcgcctcctggtcagccgtgcttcgcaacacttccttgctcggacccggggggtatgcccggcgaagaacaagcgggggcagggggtaattatcagacgaaagaaaagctcttaagcctcggcgcgtcggcgcgtggcagcggcggagccatacggggactgct"/>		
+                                
+        		<sequence id="seq_31AVR_2013.0" spec="Sequence" taxon="31AVR_2013.0" totalcount="4" value="ccctccgctacgcgcacccccccattcccacgccgtccgaatgggaagctttagcaaccgttgcgtacccgccgagcgtctgggcccagcactgggatagcacctggcgagaccgccccttggtgcttccaattatgcacgtctccggggggagtcttgagcccggtcctgatccacagtgcttccacccgactacacacccgagaagcgacgcgggacctctcttttctatgtcgagacggccttcgaccagtaggcgccgcactcaccgggcgccccctggtcaaacgtgcttcgccacactaccttgctcggacccggggggaagacccggcgaagaacaagcgggggcagggggtagttatcagacgaaagaaaagcgcttaagcctcagcgcgtcggcgcgtggcagcggcggagccatacggggactgca"/>		
+                                
+        		<sequence id="seq_42AVR_2013.0" spec="Sequence" taxon="42AVR_2013.0" totalcount="4" value="ctctccgctacgtgcacccccccattcccacgccgtccggatgggaagctttagcaaccgttgcgtatccgcctagcgtctgggcccagtagtgggatagcccctggcgagaccgccccttggtgcttccaattatgcacgtctccggggggagtctggagccccgtcccgatccacagtgcgtccgccctactacatacccgagaagcgacgcgggacctgcctgctccatgtcgagacggccttcgaccagtaagcgccgcactcgccgggcgccccttggtcagccgtgcttcgcaacacttccttactcggacccggggggaatgcccggcgaagaaccagcgggggcagggggtaattatcagacgaaagaaaagctcttaagcctcagcgcgtcggcgcgtggcagcggcggagccatacggggactgct"/>		
+                                
+        		<sequence id="seq_43AVR_2013.0" spec="Sequence" taxon="43AVR_2013.0" totalcount="4" value="ccccccgctacgcgcacccccccattcccacgccgtccggatgggaagctttagcaaccgttgcgtatccgcctagcgtctgggcccagcagtgggatagcccctggcgagaccgcccctcggtgcttccaattatgcacgtctccggggggagtctggagccccgtcccgatccacagtgcgtccgccctactacatacccgagaagcgacgcgggacctctctgttccatgtcgagacggccttcgaccagtaagcgccgcactcgctgggcgccccctagtcagccgtgcttcgcaacacttccttgctcagacccggggggaatgcccggcgaagaacaagcgggggcagggggtgattatcagacgaaagaaaagctcttaagcctcagtgcgtcggcgcgtggcagcggctgagccatacggggactgct"/>		
+                                
+        		<sequence id="seq_44AVR_2013.0" spec="Sequence" taxon="44AVR_2013.0" totalcount="4" value="ccctccgctacgtgcacccccccattcccacgccgtccggatgggaagctttagcaaccgttgcgtatccgcctagcgtctgggcccagtagtgggatagcccctggcgagaccgccccttggtgcttccaattatgtacgtctccggggggagtctggagccccgtcccgatccacagtgcgtccgccctactacatacccgagaagcgacgcgggacctgcctgctccatgtcgagacggccttcgaccagtaagcgccgcactcgccgggcgccccttggtcagccgtgcttcgcaacacttccttactcggacccggggggaatgcccggcgaagaaccagcgggggcagggggtaattatcagacgaaagaaaagctcttaagcctcagcgcgtcggcgcgtggcagcggcggagccatacggggactgct"/>		
+                                
+        		<sequence id="seq_45AVR_2013.0" spec="Sequence" taxon="45AVR_2013.0" totalcount="4" value="ccctcccccacgcgcgcccccccattcccacgccgtctggatgggaagcttcagcaaccgttgcgtacccgccgagcgtctgggcacagcactgggatagtacctgtcgagaccgccccttggtgcttccaattatgcacgtctccggggggagtctggagccccgtcccggtccacagtgcgtccgcccgactacatacccgaggagcgacgcgggacctctcttttccatgtcgagacggcccacgaccagtaagcggcgcactcgccgggcgccccctggtcagccgtgcttcgtcacacttccttgctcggacccggggggagtgcccggcgaagaacaagcgggggcagggggtagttatcagacgaaagaaaagctcttaagcctcagcgtgtcggcgcgtggcagcgtcggagccatacgggggctgct"/>		
+                                
+        		<sequence id="seq_47AVR_2013.0" spec="Sequence" taxon="47AVR_2013.0" totalcount="4" value="ccctcccccacgcgcgcccccccattcccacgccgtccggatgggaagctttagcaaccgttgcgtacccgccgagcgtctgggcccagcactgggatagcacctgtcgagaccgcaccttggtgcttccaattatgcacgtctccggggggagtctggagccccgtcccggtccacagtgcgtccgcccgactacatatccgagaagcgaagcgggacctctcttttccatgtcgagacggccttcgaccagtaagcgccgcactcgccgggcgccccctggtcagccgtgcttcgccacacttccttgctcgaacccggggggagtgcccggcgaagaacaagcgggggcagggggtagtcatcagacgaaagaaaagctcttaagcctcagcgcgtctgcgcgtggcagcggcggagccatacggggactgct"/>		
+                                
+        		<sequence id="seq_48AVR_2013.0" spec="Sequence" taxon="48AVR_2013.0" totalcount="4" value="ccccccgctacgcgcacccccccattcccacgccgtccggatgggaagctttagcaaccgttgcgtatccgcctagcgtctgggcccagcagtgggatagcccctggcgagaccgccccttggtgcttccaattatgcacgtctccggggggagtctggagccccgtcccgatccacagtgcgtccgccttactacatacccgagaagcgacgcgggccctctctgttccatgtcgagacggccttcgaccagtaagcgccgcactcgctgggcgccccctggtcagccgtgcttcgcaacacttccttgctcggacccggggggaatgcccggcgaagaacaagcgggggcagggggtgattatcagacgaaagaaaagctcttaagcctcagtgcgtcggcgcgtggcagcggctgagccatacggggactgct"/>		
+                                
+        		<sequence id="seq_49BG_2012.0" spec="Sequence" taxon="49BG_2012.0" totalcount="4" value="ccttcccccacgcgcgcccccccattcccacgccgtccggatgggaagctttagcaaccgttgcgtacccgccgagcgtctgggcccagcactgggatagcacctgtcgagaccgcaccttggtgcttccaattatgcacgtctccggggggagtctggagccccgtcccggtccccagtgcgtccgcccgactacatatccgagaagcgacgcgggacctctcttttccatgtcgagacggccttcgaccagtaagcgccgtactcgccgggcgccccctggtcagccgtgcttcgccacacttccttgctcgaacccggggggagtgcccggcgaagaacaagcgggggcagggggtagttatcagacgaaagaaaagctcttaagcctcagcgcgtcggcgcgtggcaacggcggagccatacggggactgct"/>		
+                                
+        		<sequence id="seq_50BG_2011.0" spec="Sequence" taxon="50BG_2011.0" totalcount="4" value="ccctcccccacgcgcgcccccccattcccacgccgtctggatgggaagctttagcaatcgttgcgtacccgccgagcgtctgggcacagcactgggatagtacctgtcgagaccgccccttggtgcttccaattatgcacgtctccggggggagtctggagccccgtcccggtccacagtgcgtccgcccgactacatacccgagaagcgacgcgggacctctcttttccatgtcgagacggccttcgaccagtaagcggcgcactcgccgggcgccccctggtcagccgtgcttcgtcacacttccttgctcggacccggggggagtgcccggcgaagaacaagcgggggcagggggtagttatcagacggaagaaaagctcttaagcctcagcgcgtcggcgcatggcagcgtcggagccatacggggactgct"/>		
+                                
+        		<sequence id="seq_51BG_2007.0" spec="Sequence" taxon="51BG_2007.0" totalcount="4" value="ccctcccccacgcgcgcccccccattcccacgccgtccggatgggaagctttagcaaccgttgcgtacccgccgagcgtctgggcacagcactgggatagtacctgttgagaccgccccttggtgcttccaattatgcacgtctccggggggagtctggagccccgtcccggtccacagtgcgtccgcccgactacatacccgagaagcgacgcgggacctctcttttccatgtcgagacggccttcgaccagtaagcggcgcactcgccgggcgccccctggtcagccgtgcttcgtcacacttccttgctcggacccggggggagtgcccggcgaagaacaagcgggggcagggggtagttatcagacgaaagaaaagctcttaagcctaagcgcgtcggcgcgtggcagcggcggagccatacggggactgct"/>		
+                                
+        		<sequence id="seq_52BG_2006.0" spec="Sequence" taxon="52BG_2006.0" totalcount="4" value="ccctccgctacgcgcacccccccattcccacgccgtccgaatgggaagctttagcaaccgttgcgtacccgccgggcgtctgggcccagcactgggatagcacctggcgagaccgccccttggtgcttccaattatgcacgtctccggggggagtcttgagcccggtcctgatccacagtgcttccacccgactacatacccgagaagcgacgcggaacctctcttttctatgtcgagacggccttcgaccagtaggcgccgcactcaccgggcgccccctggtcaaacgtgcttcgccacacttccttgctcggacccggggggaagacccggcgaagaacaagcgggggcagggggtagttatcagacgaaagaaaagctcttaagcctcagcgcgtcggcgcgtggcagcggcggagccatacgggaactgca"/>		
+                                
+        		<sequence id="seq_53BG_2009.0" spec="Sequence" taxon="53BG_2009.0" totalcount="4" value="ccctcccccacgctcgcccccccattcccacgccgtccggatgggaagctttagctaccgttgcgtacccgccgagcgtctgggcacagcactgggatagtacctgttgagaccaccccttggtgcttccaattatgcacgtctccggggggagtctggagccccgtcccggtccacagtacgtccgcccgactacatacccgagaagcgacgcgggacctctcttttccatgtcgagacggccttcgaccagtaagcagcgcactcgccgggcgccccctggtcagccgagcttcgtcacacttccttgctcggacccgaggggagtgcccggcgaagaacaagcgggggcagggggtagttatcagacgaaagaaaagctcttaagcctcagcgcgtcggcgcgtggcagcggcggagccatacggggactgct"/>		
+                                
+        		<sequence id="seq_54BG_2011.0" spec="Sequence" taxon="54BG_2011.0" totalcount="4" value="ccctcccccacgcgcgcccccccattcccacgccgtccggatggggagctttagcaaccgttgcgtacccgccgagcgcctgggcccagcactgggatagcacctgtcgagaccgccccttggtgcttccaattaggcacgtctccggggggagtctggagccccgtcccggtccacagtgcgtccgcccgactacatacccgagaagcgacgcgggacctctcttttccatgtcgagacaaccttcgaccagtaagcggcgcacccgccgggcgccccctggtcagccgtgcttcgccacacttccttgctcggacccggggggagtgcccggcgaagaacaagcgggggcagggggtagttaccagacgaaagaaaagctcttaagcctcagcgcgtcggcgcgtggcagcggcggagccatacggggactgct"/>		
+                                
+        		<sequence id="seq_55BG_2012.0" spec="Sequence" taxon="55BG_2012.0" totalcount="4" value="ccctccgctacgcgcacccccccattcccacgccgtccggctgggaagctttagcaaccgttgcgtacccgccgagcgtctgggcccagcactgggatagcacctggcgagaccgccccttggtgcttccaattatgcacgtctccggggggagtctggagccccgtcctgatccacagtgcttccgcccgactacatacccgagaagcgacgcgggaccactcttttccatgtcgagacggccttcgaccagtaagcgccgcactcgccgggcgcaccctggtcagccgtgcttcgccacacttccttgctcggacccggggggaagacctggcgaagaacaagcgggggcaaggggtagttatcagacgaaagaaaagctcttaagcttcagcgcgtcggcgcgtggaagcggcggatccatacggggactgct"/>		
+                                
+        		<sequence id="seq_56BG_2011.0" spec="Sequence" taxon="56BG_2011.0" totalcount="4" value="ccctccgctacgcgcacccccccattcccacgccgtccggatgggaagctttggcaaccgttgcgtacccgccgagcatctgggcccggcactgggatagcacctggcgagaccgccccttggtgcttccaattatgcacgtctccggggggagtctggagccccgtcctgattcacaatgcttccgcccgactacatacccgagaagtgacgcgggacttctcttttccatgtcgagacggcctttgacaagtaagcgccgcactcgccgggcgccccctggtcagccctgcttcgccacacttccttgttcggacccggggggaagacccggcgaagaacaagcgggggtagggggtagttatcagacgaaagaaaagttcttaagcttcagcgcgtcggcgcgtggcagcggcggagccataaggggactgct"/>		
+                                
+        		<sequence id="seq_57BG_2011.0" spec="Sequence" taxon="57BG_2011.0" totalcount="4" value="ccctccgctacgcgcacccccccattcccacgccgtccggatgggaagctttggcaaccgttgcgtacccgccgagcgtctgggcccagcactgggatagcacctggcgagaccgccccttggtgcttccaattatgcacgtctccggggggagtctggagccccgtcctgattcacagtgcttccgcccgactacatacccgagaagtgacgcgggacttctcttttccatgtcgagacggcctttgacaagtaagcgccgcactcgccgggcgccccctggtcagccctgcttcgccacacttcctcgttcggacccggggggaagacccggcgaagaacaagcgggggtagggggtagttatcagacgacagaaaagttcttaagcttcagcgcgtcggcgcgtggcagcggcggagccataaggggactgct"/>		
+                                
+        		<sequence id="seq_58BG_2011.0" spec="Sequence" taxon="58BG_2011.0" totalcount="4" value="ccctcccccacgcgcgcccccccattccaacgccgtccggatgggaagctttagcaaccgttgcgtacccgccgagcgtctgggcccagcactggtatagcacctgtcgagaccgccccttggtgcttccaattagacacgtctccggggggcgtctggagccccgtcccggtccacagtgcgtccgcccgactacatacccgagaagcgacgcgggacctctcttttccatgtcgagacagccttcgaccagtaagcggcgcacccgccgggcgccccctggtcagccgtgcttcgccacacttccttgctcggacccggggggagtgcccggcgaagaacaagcgggagcagggggtagttatcagacgaaagaaaagctcttaagcctcagcgcgtcggcgcgtggcagcggcggagccatacggggactgct"/>		
+                                
+        		<sequence id="seq_60BG_2012.0" spec="Sequence" taxon="60BG_2012.0" totalcount="4" value="ccctcccccacgcgcgcccccccattcccacgccgtctggatgggaagctttagcaaccgttgcgtacccgccgagcgtctgggcacagcactgggatagtacctgtcgagaccgccccttggtgcttccaattatgcacgtctcccgggggagtctggagccccgtcccggtccacagtgcgtccgcccgactacatacccgagacgcgacgcaggacctctcttttccatgtcgagacggccttcaaccagtaagcggcgcactcgccgggcgccccctggtcagccgtgcttcgtcacacttccttgctcggacccggggggagtgcccggcgaagaacaagcgggggcagggggtagttatcagacgaaagaaaagctcttaagcctcagcgcgtcggcgcgtgacagcgtcggagccatacgggggctgct"/>		
+                                
+        		<sequence id="seq_62BG_2011.0" spec="Sequence" taxon="62BG_2011.0" totalcount="4" value="ccctcccccacgcgcgcccccccattcccacgccgtctggatgggaagctttagcaaccgttgcgtacccgccgagcgtctgggcacagcactgggatagtacctttcgagaccgccccttggtgcttccaattatgcacgtctccggggggagtctggagccccgtcccggtccacagtgcgtccgcccgactacatacccgagaagcgacgcgggacctctcttttccatgtcgagacggccttcgaccagtaagcggcgcactcgccgggcgccccctggtcagccgtgcttcgtcacacttccttgctcggacccggggggagtgcccggcgaagaacaagcgggggcaggaggtagttatcagacgaaagaaaagctcttaagccccagcgcgtcggcgcgtggcagcgtcggagccatacgggggctgct"/>		
+                                
+        		<sequence id="seq_63BG_2011.0" spec="Sequence" taxon="63BG_2011.0" totalcount="4" value="ccctcccccacgcgcgcccccccattcccacgccgtctggatgggaagctttagcaaccgttgcgtacccgccgagcgtctgggcacagcactgggatagtacctgtcgagaccgccccttggtgcttccaattatgcacgtctccggggggagtctggagccccgtcccggtccacagtgcgtccgcccgactacatacccgagaagcgacgcaggacctctcttttccatgtcgagacggccttcaaccagtaagcggcgcactcgccgggcgccccctggtcagccgtgcttcgtcacacttccttgctaggacccggggggagtgcccggcgaagaacaagcgggggcagggggtagttatcagacgaaagaaaagctcttaagcctcagcgcgtcggcgcgtgacagcgtcggagccatacgggggctgct"/>		
+                                
+        		<sequence id="seq_65BO_2013.0" spec="Sequence" taxon="65BO_2013.0" totalcount="4" value="ccctcccccacgcgcgcccccccattcccacgccgtctggatgggaagctttagtaaccgttgcgtacccgccgagcgtctgggcacagcacagggatagtacctgtcgagaccgccccttggtgcttccaattatgcacgtctccggggggagtctggagccccgtcccggtccactgtgcgtccgcccgactacatacccgagaagcaacgcgggacctctcttttccatgtcgagacggccttcgaccagtaagcggcgcactcgccgggcgccccctggccagccgtgcttcgtcacacttccttgctcggaccaggggggagtgcccggcgaagaacaagcgggggcagggggtagttatcagatgaaagaaaagctcttaagcctcagcgcgtcggcgtgtggcagcgtaggagccatacgggggctgct"/>		
+                                
+        		<sequence id="seq_66BO_2013.0" spec="Sequence" taxon="66BO_2013.0" totalcount="4" value="ccctccgctacgcgcaccccctcattcccacgccgtccggatgggaagctttagcaaccgttgcgtacccgccgagcgtctgggcccagcactgggatagcacctggcgagaccgccccttggtgcttccaattaggcacgtcgccgggggaaatctggagccccgtcctaatccacagtgcttccgcccgactacatacccgagaagcgacgcgggacctctcttttccatgtcgagacggccttcgaccagtaagcgccgcactcgccgggcgccccctggtcagccgtgcttcgccacacttccttgctcggacccggggggaagacccggcgaagaacaagcggaggcagggggtagttatcagacgaaagaaaagctcttaagcctcagcgcgtcggcgcgaggcagcggcggagccatacggggactgct"/>		
+                                
+        		<sequence id="seq_67BO_2013.0" spec="Sequence" taxon="67BO_2013.0" totalcount="4" value="ccctcccccacgcgcgcccccccattcccacgccgtctggatgggaagcttcagcaaccgttgcgtacccgccgagcgtctgggcacagcactgggatagtacctgtcgagaccgccccttggtgcttccaattatgcacgtctccggggggagtctggagccccgtcccggtccacagtgcgtccgctcgactacatacccgaggagcgacgcgggacctctcttttccatgtcgagacggcccacgaccagtaagcggcgcactcgccgggcgccccctggtcagccgtgcttcgtcacacttccttgctcggacccggggggagtgcccggcgaagaacaagcgggggcagggggtagttatcagacgaaagaaaagctcttaagcctcagcgtgtcggcgcgtggcagcgtcggagccatacgggggctgct"/>		
+                                
+        		<sequence id="seq_68BO_2011.0" spec="Sequence" taxon="68BO_2011.0" totalcount="4" value="ccctcccccacgcgcgcccccccattcccacgccgtctggatgggaagctttagcaaccgttgcgtacccgccgatcgtctgggcacagcactgggatagtacctgtcgagaccgccccttggtgcttccaattatgcacgtctccggggggagtctggagccccgtcccggtccacagtgcgtccgcccgactacatacccgagaagcgacgcaggacctctcttttccatgtcgagacggccttcaaccagtaagcggcgcactcgccgggcgccccctggtcagccgtgcttcgtcacacttccttgctcggacccggggggagtgcccggcgaagaacaagcgggggcagggagtagttatcagacgaaagaaaagctcttaagcctcagcgcgtcggcgcgtgacagcgtcggagccatacgggggctgct"/>		
+                                
+        		<sequence id="seq_69BO_2011.0" spec="Sequence" taxon="69BO_2011.0" totalcount="4" value="ccctcccccaagcgcgtccccccattcccgcgccgtctggatgggaagcttcagcaaccgttgcgtacccgccgagcgtctgggcacagcactgggatagtacctgtcgagaccgccccttggtgcttccaattatgcacgtctccggggggagtctggagccccgtcccggtccacagtgcgtccgcccgactacataccccaggagcgacgcgggacctctcttttccatgtcgagacggcccacgaccagtaagcggcgcactcgccgggcgccccctggttagccgtgcttcgtcacacttccttgctcggacccggggggagtgcccggcgaagaacaagcgggggcagggggtagttatcagacgaaagaaaagctcttaagcctcagcgtgtcggcgcgtggcagcgtcggagccatacgggggctgct"/>		
+                                
+        		<sequence id="seq_70BO_2011.0" spec="Sequence" taxon="70BO_2011.0" totalcount="4" value="ccctcccccgcgcgcgcccccccattcccacgccgtccggatgggaagctttagcaaccgttacgtacccgccgagcgtgtgagcacagcactgggatagtacctgtcgagaccgccccttggtgcttctatttatgcacgtctccggggggagtctggagccccgtcccggtccacagtgcgtccgcccgactacatacccgaaaagcgacgcgggacctctcttttccatgtcgagacggccttcgacccgtaagcggcgcactcgccgggcgccccctggtcagccgtgcttcgccacgtttccttgctcggacccggggggagtgcccggcgaagaacaagcgggggcagggggtagttatcagacgaaagaaagactcttaatcctcagcgcgtcggcgcgtggcagcggcggagccatacggggactgct"/>		
+                                
+        		<sequence id="seq_71RE_2011.0" spec="Sequence" taxon="71RE_2011.0" totalcount="4" value="ccctccgctacgcgcacccccccaatcccacgccgtccggatgggaagttttagcacccgttgcgtacccgccgagcgtctgggcccagcactgggatagcacctggcgagaccgccccttggtgcttccaattatgcacgtctccggggggagtctggagccccgacctgatccacagtgcttccgcccgactacatacccgagaagcgacgcgggacttctcttttccatatcgcgacggccttcgacaagtgagcgccgcactcgccgggcgccccctggtcagccgtgcttcgccacacttccttgctcggacccggggggaagacccggcgaagaacaagcgggggtagggggtagttatcagacgaaagaaaagctcttaagcttcagcgcgtcggcgcgtggcagcggcggagccataaggggactgct"/>		
+                                
+        		<sequence id="seq_73RE_2011.0" spec="Sequence" taxon="73RE_2011.0" totalcount="4" value="ccctccgctacgcgcacccccccattcacacgccgtccggatgggaagctttagcaaccgttgcgtatccgccgagcgtctgggcccagcactgggatagcacctggctagaccgccccttggtgctcccaattatgcacgtctccggggggagtctggagccccgtcccgatccacagtgcgtccgccctactacatacccgagaagcgacgagggacctctcttttccatgtcgagacggccttcgaccagtaagcgccgcactcgccgggcgccccctggtccgccgtgcttcgccacacttccttgctcggacccggggggaatgcccggcgaagaacaagcgggggcagggggtaattatcagacgaaagaaaagctcttaagcctcagcgcgtcggcgcgtggcagcggcggagccatacggggactgct"/>		
+                                
+        		<sequence id="seq_74RE_2011.0" spec="Sequence" taxon="74RE_2011.0" totalcount="4" value="ccctgcgctacgcgcacccccccattcacacgccgtccggatgggaagctttagcaaccgttgcgtatccgccgagcgtctgggcccagcactgggatagcacctggctagaccgccccttggtgctcccaattatgcacgtctccggggggagactggagccccgtcacgatccacagtgcgtccgccctactacatacccgagaagcgacgagggacctctcttttccatgtcgagacggccttcgaccagtaagcgccgcactcgccgggcgccccctggtccgccgtgcttcgccacacttccttgctcggatccggggggaatgcccggcgaagaacaagcgggggcagggggtaattatcagacgaaagaaaagctcttaagcctcagcgcgtcggcgcgtggcagcggcggagccatacggggactgct"/>		
+                                
+        		<sequence id="seq_75RE_2011.0" spec="Sequence" taxon="75RE_2011.0" totalcount="4" value="ccctccgctacgcgcacccccccattcccacgccgtccggatgggaagctttagcaaccgttgcgtacccgccgagcgtctgggcccagcactgggatagcacctggcgagaccgccccttggtgcgtccaattatgcacgtctccggggggagtctggagccccgtcctgatccacagtgcttccgcccgactacatacccgagaagtgacgcgggacttctcttttccatgtcgagacggccttcgacaaataagcgccgcactcgtcgggcgccccctggtcagcccttcttcgccacacttccttgcccggacccggggggaagacccggcgcagaacaagcgggggtagggggtagttatcagacgaaagaaaagctcttaagcttcagcgcgtcggcgcgtggcagcggcggagccataaggggactgct"/>		
+                                
+        		<sequence id="seq_76RE_2012.0" spec="Sequence" taxon="76RE_2012.0" totalcount="4" value="ccctccgctacgcgcacccccccattcccacgccgtccggatgggaagctttagcaaccgttgcgtacccgccgagcgtctgggcccagcactgggatagcacctggcgagaccgccccttggtgtttccaattatgcacgtctccggggggagtctggagccccgtcctgatctacagtgcttccgcccgactacatacccgagaagcgacgcgggatctctcttttccatgtcgagacggccttcgaccagtaagcgccgcactcgccgggcgccccctgatcagccgtgcttcgccacacttccttgctcggacccggggagaagacccggcgaagaacaagcgggggcagggggtagttatcagacgaaagttaagctcttatgcctcagcgcgtcggcgcgtggcagcggcggtgccacacggggactgct"/>		
+                                
+        		<sequence id="seq_78RE_2012.0" spec="Sequence" taxon="78RE_2012.0" totalcount="4" value="ccctctgctacgcgcacccccccatttccacgccgtccggatgggaagctttagcaaccgttgcgtacccgccgagcgtctgggcccagcgctgggatagcacctggcgagaccgcctcttggtgcttccaattatgcacatctccggggggagtctggagcctcgtactgacccacagtgcttccgcccgactacatacccgagaagcgacgcgggccctctcttttccatgtcgagacggccttcgaccagtaagcgccgcactcgccgggcgccccctggtcagccgtgcttcgccatacttccttgctcggacccggggggaagacccggcgaagaacaagcgggggcagggggtagctatcagacgaaagaaaagctctaaagcctcagcacgtcggcgcgaggcagcggcggagccatacggggaccact"/>		
+                                
+        		<sequence id="seq_79RE_2012.0" spec="Sequence" taxon="79RE_2012.0" totalcount="4" value="ccctccgctacgcgcactaccccattcccacgccgtccggatggaaaactttagcaaccgttgcgtatccgccgagcgtccgggcccagcactgggatagcacccggcgagaccgccccttggtgcttccaattatgcacgtctccggggggagtctggagccccgtcccgatccacagtgcgtccgcccgaccacatacccgagaagcgacgcgggacctctcttttccatgtcgagacggccttcgaccagtaagcgccgcactcgccgggcgtcccctggtcagccgtgcttcgccacacttccttgctcggtcccggggggaatgcccggcgaagaacaagcgggggcagggggtagttatcagacgaaagaaaagctcttaagcctcagcgcgtcggcgcgtggcagcggcggagccatacggggactgct"/>		
+                                
+        		<sequence id="seq_81RE_2011.0" spec="Sequence" taxon="81RE_2011.0" totalcount="4" value="ccctcccccacgcgcgcccccccattcccacgccgtccggatgggaagctttagcaaccgttgcgtacccgccgagcgtctgggcacagcactgggatagtacctgttgagaccgccccttggtgcttccaattatgcacgtctccggggggagtctggagccccgtcccggtccacagtgcgtccgcccgactacatacccgagaaacgacgcgggacctctcttttccatgtcgagacggccttcgaccagtaagcggcgcactcgccgggcgccccctggtcagccgtgcttcgtcacacttccttgctcggacccggggggagtgcccggcgaagaacaagcgggggcagggggtagttatcagacgaaagaaaagctcttaagcctcagcgcgtcggcgcgtggcagcggcggagtcatacggggactgct"/>		
+                                
+        		<sequence id="seq_82RE_2012.0" spec="Sequence" taxon="82RE_2012.0" totalcount="4" value="ccctcccccacgcgcgcccccccattcccacgccgtctggatgggaagctttagcaaccgttgcgtaccagccgagcgtctgggcacagcactgggatagtacctgtcgagaccgccccttggtgcttccaattatgcacgtctccggggggagtctggagccccgtcccggtccacagtgcgtccgcccgactacatacccgagaagcgacgcgggacctctcttttccatgtctagacggctttcgaccagtaagcggcgcactcgccgggcgccccctggtcagccgtgcttcgtcacacttccttgctcggacccggggggagtgcccggcgaagaacaagcgggggcagggggtagttatcagacgaaagaaaagctcttaagcctcagcgcgtcggcgcgtagcagcgtcggagccatacgggggctgct"/>		
+                                
+        		<sequence id="seq_83RE_2012.0" spec="Sequence" taxon="83RE_2012.0" totalcount="4" value="ccctcccccacgcgcgcccccccattcccacgccgtctggatgggaagctttagcaaccgttgcgtacccgccgagcgtctgggcacagcactgggatagtacctgtcgagaccgtcccttggtgcttccaattatgcacgtctccggggggagtctgaagccccgtcccggtccacagtgcgtccgcccgactacatacccgagaagcgacgcgggacctctcttttccatgtctagacggctttcgaccagtaagcggcgcactcgccgggcgccccctggtcagccgtgcttcgtcacacttccttgctcggacccggggggagtgcccagcgaagaacaagcgggggcagggggtagttatcaggcgaaagaaaagctcttaagcctcagcgcgtcggcgcgtagcagcgtcggagccatacgggggctgtt"/>		
+                                
+        		<sequence id="seq_84RE_2012.0" spec="Sequence" taxon="84RE_2012.0" totalcount="4" value="ccctcccccacgcgcgcccccccgttcccaagccgtccggatgggaagcgttagcaaccgttgcgtacccgccgagcgtctgggcccagcactgggatcgcacctgtcgagactgcaccttggcgcttccaattatgcacgtctccggggggagtctggagccccgtcccggtccacagtgcgtccgcccgactaaatatccgagaagcgacgcgggacctctctttaccatgtcgagtcggccttcgaccagtaagcgcagcactcgccgggcgccccctggtcagccgtgcctcgccacacttccttgctcgaacccggggggagtgcccggcgaataacaagcgggggcagggggtagttatcagacgaaagaaaagctcttaagcctcagcgcgtcggcgcgtggcagcggcggagccatacggggactgct"/>		
+                                
+        		<sequence id="seq_85RE_2012.0" spec="Sequence" taxon="85RE_2012.0" totalcount="4" value="ccctcccccacgcgtgcccccccattcccacgccgtccagatgggaagctttagcaaccgttgcgtacccgccgagcgtctgagcacaacactgggatagtacctgtcgagaccgccccttggtgcttccaattaggcgggacttcgtgaggagtctggagccccgtcccggtccacagtgcgtccgcccgactacgtacctgaaaagcgacgcgggacctctcttttccatgtcgagacggccttcgacccgtaagcggcgcactcgccgggcgccccctggtcagccgtgcttcgccacacttccttgctcggacccggggggagtgcccggataagaacaggcgggggcagggggtagttatcagacgaaagaaaagctcttaatcctcagcgcgtcggcgcgtggcagcggcggagccatacggggactgct"/>		
+                                
+        		<sequence id="seq_86SGR_2011.0" spec="Sequence" taxon="86SGR_2011.0" totalcount="4" value="ccctccgctacgcgcacccccctattcccacgccgtccggatgggaagctttagcaaccgtagcgtatccgcctagcgtctgggcccagcagtgggatagcccctggcgagaccgccccttggtgcttccgattatgcacgtctccggggggagtctggagccccgtcccgatccacagtgcgtccgccctactacatacccgagaagcgacgcgggacctctctgttccatgtcgagacggccttcgaccagtaagcgccgcactcgccgggcgccccctggtcagccgtgcttcgcaacacttccttgctcggacccggggggaaggcccggcgaagaacaagcgggggcagggggtaattatcagacgaaagaaaagctcttaagcctcagcgcgtcggcgcgtggcagcggcggagccatacggggactgct"/>		
+                                
+        		<sequence id="seq_87SGR_2011.0" spec="Sequence" taxon="87SGR_2011.0" totalcount="4" value="ccctccgctacgcgcacccccccattcccacgccgtccggatgggaagctttagcaaccgttgcgtacccgccgagcgtctaggtccagcactgggatagcaactggcgagaccgccccttggtgcttccaattatgcacgtctccggggggagtcgggagccccgtcctgatccacagtgcttccgcccgactacatacccgggaagcgacgcgggacctctcttttccatgtcgagacggccttcgaccagtaagcgccgcactcgccgggcgccccctggtcagccgtgcttcgccacacttccttgctcggacccggggggaagacccggcgaagaacaaacgggggcagggggtagttatcagacgaaggaaaagctcttaagcctcagcgcgtcggcgcgaggcagcggcggagccatacggagactgct"/>		
+                                
+        		<sequence id="seq_89SGR_2011.0" spec="Sequence" taxon="89SGR_2011.0" totalcount="4" value="ccctcccccacgcgcgcccccccattcccacgctgtccggatgggaagctttagcaaccgttgcgtacccgccgagcgtctgagcacagcactgggatagtacttgtcgagaccgccccttggtgcttccaataatgcacgtctcaggggtgagtctggagccccgtcccggtccacagtgcgtccgaccgactacatacccgaaaagcgacgcgggacctcttttttccatgtcgagacggacttcgacccgtaagcggcgcactcgccgggcgccctctggtcagccgtgcttcgccacacttccttgctcggaccctgggggagtgcccggcgaagaacaagcgggggcggcggttagttatcagacgaaagaaaagctcttaatcctcagcgcgtcggcgcgtggcagcggcggagccatacggggactgct"/>		
+                                
+        		<sequence id="seq_90SGR_2011.0" spec="Sequence" taxon="90SGR_2011.0" totalcount="4" value="ccctccgctacgcgcacccccccattcccacgccgtccggatgggaagctttagcaaccgtagcgtatccgcctagcgtctgggcccagcagtgggatagcccctggcgagaccgccccttggtgcttccgattatgcacgtctccggggggagtctggagccccgtcccgatccacagtgcgtccgccctactacatacccgagaagcgacgcgggacctctctgttccatgtcgagacggccttcgaccagtaagcgccgcactcgccgggcgccccctggtcagccgtgcttcgcaacacttccttgctcggacccggggggaatgcccggcgaagaacaagcgggggcagggggtaattatcagacgaaagaaaagctcttaagcctcagcgcgtcggcgcgtggcagcggcggagccatacggggactgct"/>		
+                                
+        		<sequence id="seq_91SGR_2012.0" spec="Sequence" taxon="91SGR_2012.0" totalcount="4" value="ccctccgctacgcgcacccccccattcccacgccgtccggatgggaagctttagcaaccgttgcgtatccgccgagagtctgggcccagcactaggatagcacctggcgagaccgccccttggtgcttccaattatgcacgtctccggggggagtctggagccccgtcccgatccacagtgtgtccgccctactacatacccgagaagcgacgcgggacctctctgttccatgtcgagacggccttcgaccagtaagcgccgcactcgccgggcgccccccggtcagccgtgtttcgcaacacttcattgctcggacccggggggaatgcacggcgaagaacaagcgggggcagggggtaattatcagacgaaaaaaaagctcttaagcctcagcgcgtcggcgcgtggcagcggcggagccatacggggactgct"/>		
+                                
+        		<sequence id="seq_92SGR_2012.0" spec="Sequence" taxon="92SGR_2012.0" totalcount="4" value="ccctccgctacgcgcacccccccattcccacgccgtccggatgggaagctttagcaaccgttgcgtatccgccgagagtctgggcccagcactaggatagcacctggcgagaccgccccttggtgcttccaattatgcacgtctccggggggagtctggggccccgtcccgatccacagtgtgtccgccctactacatacccgagaagcgacgcgggacctctctgttccatgtcgagacggccttcgaccagtaagcgccgcactcgccgggcgccccccggtcagccgtgtttcgcaacacttcattgctcggacccggggggaatgcacggcgaagaacaagcgggggcagggggtaattatcagacgaaaaaaaagctcttaagcctcagcgcgtcggcgcgtggcagcggcggagccatacggggactgct"/>		
+                                
+        		<sequence id="seq_93SGR_2012.0" spec="Sequence" taxon="93SGR_2012.0" totalcount="4" value="ccctcccccacgcgcgcccccccattcccacgccgtctggacgagaagctttagcaaccgttgcgtacccgccgagcgtctgggcacagcactgggatagtacctgtcgtgaccgccccttggtgcttccaattatgcacgtctccggggggagtctggagccccgtcccggtccacagtgcgtccgcccgactacatacccgagaagcgacgcgggacctctcttttccatgtcgagacggccttcgaccagtaagcggcgcactcgccgggcgccccctggtcagccgtgcttcgtcacacttccttgctcggacccggggggagtgcccggcgaagaacaagcgggggcagggggtagttatcagacgaaagaaaagctcgtaagcctcagcgcgtcggcgcgtggcagcgtcggagccatacggggactgct"/>		
+                                
+        		<sequence id="seq_94SGR_2012.0" spec="Sequence" taxon="94SGR_2012.0" totalcount="4" value="ccctcccccacgcgcgcccctccattcccacgccgtctggatgggaagctttagcaaccgttggatacccgccgagcgtctgggcacagcactgggatagtacctgtcgagaccgccccttggtgcttccaattatgcacgtttccggggggagtttggagccccgtcccggtccacagtgcgtccgcccgactgcatacccgagaagcgacgcgggacctctcttttccatgtcgagacggccttcgaccagtaagcggcgcactcgccgggcgccccctggtcagccgtgcttcgtcacacttccttgctcggacccggggggagtgcccggcgaagaacaagcgggggcagggggtagttatcagacgaaagaaaagctcttaagcctcagcgcgtcggcgcgtggcagcgtcggagctatacggggactgct"/>		
+                                
+        		<sequence id="seq_95SGR_2012.0" spec="Sequence" taxon="95SGR_2012.0" totalcount="4" value="ccctccgctacgcgcacccccccattcccacgccacccggatgggaagctttagcaaccgttgcgtacccgccgagcgtctgggcccagcactgggatagcacctggcgagaccgccccttggtgcttccaattatgcacgtctccggggggagtctggagccccgtcctgatccacagtgcttccgcccgactacatacccgagaagcgacgcgggacttctcttttccatgtcgagacggccttcgacaagtaaacgccgcactcgccgggcgccccctggtcagccgtgcttcgccacacttccttgctcggacccggggggaagacccggcgaagaacaagcgggggtagggggtagttatcagacgaaagaaaagctcttaagcttcagcgcgtcggcgcgtggcagcggcggagccataaggggactgct"/>		
+                                
+        		<sequence id="seq_96SGR_2012.0" spec="Sequence" taxon="96SGR_2012.0" totalcount="4" value="ccctcccccacgcgcgtccccccattcccacgccgtctggatgggaagcttcagcaaccgttgcgtacccgccgagcgtctgggcacagcactgggatagtacctgtcgagaccgccccttggtgcttccaattatgcacgtctccggggggagtctggagccccgtcccggtccacagtgcgtccgcccgactacatacacgaggagcgacgcgggacctctcttttccatgtcgagacggcccacgaccagtaagcggcgcactcgccgggcgccccctggtcagccgtgcttcgtcacacttccttgctcggacccgggggaagtgcccggcgaagaacaagcgggggcagggggtagttatcagacgaaagaaaagctcttaagcctcagcgtgttggcgcgtggcagcgtcggagccatacgggggctgct"/>		
+                                
+        		<sequence id="seq_97SGR_2012.0" spec="Sequence" taxon="97SGR_2012.0" totalcount="4" value="ccctcccccacgcgcgcccccccattccaacgccgtccggatgggaagctttagcaaccgttgcgtacccgccgagcgtctgggcccagcactgggatagcacctgtcgagaccgccccttgatgcttccaattagacacgtctccggggggcgtctggagccccgtcccggtccacagtgcgtccgcccgactacatacccgagaagcgacgcgggacctctcttttccatgtcgagacagccttcgaccagtaagcggcgcacccgccgggcgccccctggtcagccgtgcttcgccacacttccttgctcggacccggggggagtgcccggcgaagaacaagcgggggcagggggtagttatcagacgaaagaaaagctcttaagcctcagcgcgtcggcgcgtggcagcggcggagccatacggggactgct"/>		
+                                
+        		<sequence id="seq_98SGR_2012.0" spec="Sequence" taxon="98SGR_2012.0" totalcount="4" value="ccctccgctacgcgcacccccccattcccacgccgtccggatgggatgctttagcaaccgttgcgtacccgccgagcgtctgggcccagcactgggatagcacctggcgagaccgccccttggtgcttacaattatgcacgtctccggggggagtctggagccccgtcctgatccacagtgcttccgcccgactacatacccgagaagcgacgcgggacctctcttttccatgtcgagacggccttcgaccagtaagcgccgcactcgccgggcgccccctggtcagccgtgcttcgccacacttccttgctcggacccggggggaagatccggcgaagaacaagcgggggcagggggtagttattagacgaaagaaaagctcttaagcctcagcgcgtcggcgcgaggcagcggcggagccgtgcggggactgct"/>		
+                            
+    	</data>	
+        
+
+
+    
+
+
+    
+
+    	<map name="Uniform">beast.math.distributions.Uniform</map>	
+    
+    	<map name="Exponential">beast.math.distributions.Exponential</map>	
+    
+    	<map name="LogNormal">beast.math.distributions.LogNormalDistributionModel</map>	
+    
+    	<map name="Normal">beast.math.distributions.Normal</map>	
+    
+    	<map name="Beta">beast.math.distributions.Beta</map>	
+    
+    	<map name="Gamma">beast.math.distributions.Gamma</map>	
+    
+    	<map name="LaplaceDistribution">beast.math.distributions.LaplaceDistribution</map>	
+    
+    	<map name="prior">beast.math.distributions.Prior</map>	
+    
+    	<map name="InverseGamma">beast.math.distributions.InverseGamma</map>	
+    
+    	<map name="OneOnX">beast.math.distributions.OneOnX</map>	
+    
+    	<run id="mcmc" spec="$(mcmc.spec=MCMC)" chainLength="$(mcmc.chainLength=10000000)">		
+            
+        		<state id="state" spec="$(state.spec=State)" storeEvery="$(state.storeEvery=5000)">			
+                    
+            			<tree id="Tree.t:klebsiella_snps_no_outliers" spec="$(Tree.spec=beast.evolution.tree.Tree)" name="$(Tree.name=stateNode)">				
+                            
+                				<trait id="dateTrait.t:klebsiella_snps_no_outliers" spec="$(dateTrait.spec=beast.evolution.tree.TraitSet)" traitname="$(dateTrait.traitname=date)" value="68BO_2011.0=2011.0,65BO_2013.0=2013.0,97SGR_2012.0=2012.0,47AVR_2013.0=2013.0,31AVR_2013.0=2013.0,30BO_2012.0=2012.0,101BO_2012.0=2012.0,48AVR_2013.0=2013.0,29BO_2012.0=2012.0,98SGR_2012.0=2012.0,74RE_2011.0=2011.0,102BO_2012.0=2012.0,81RE_2011.0=2011.0,79RE_2012.0=2012.0,103BO_2012.0=2012.0,92SGR_2012.0=2012.0,95SGR_2012.0=2012.0,73RE_2011.0=2011.0,55BG_2012.0=2012.0,43AVR_2013.0=2013.0,45AVR_2013.0=2013.0,60BG_2012.0=2012.0,51BG_2007.0=2007.0,24PV_2013.0=2013.0,42AVR_2013.0=2013.0,78RE_2012.0=2012.0,26BO_2013.0=2013.0,86SGR_2011.0=2011.0,94SGR_2012.0=2012.0,66BO_2013.0=2013.0,93SGR_2012.0=2012.0,69BO_2011.0=2011.0,58BG_2011.0=2011.0,63BG_2011.0=2011.0,96SGR_2012.0=2012.0,44AVR_2013.0=2013.0,27BO_2011.0=2011.0,87SGR_2011.0=2011.0,28BO_2011.0=2011.0,11PV_2013.0=2013.0,91SGR_2012.0=2012.0,12PV_2013.0=2013.0,52BG_2006.0=2006.0,53BG_2009.0=2009.0,84RE_2012.0=2012.0,23PV_2013.0=2013.0,54BG_2011.0=2011.0,75RE_2011.0=2011.0,104BO_2012.0=2012.0,70BO_2011.0=2011.0,49BG_2012.0=2012.0,82RE_2012.0=2012.0,71RE_2011.0=2011.0,76RE_2012.0=2012.0,62BG_2011.0=2011.0,25BO_2013.0=2013.0,56BG_2011.0=2011.0,67BO_2013.0=2013.0,83RE_2012.0=2012.0,89SGR_2011.0=2011.0,50BG_2011.0=2011.0,90SGR_2011.0=2011.0,85RE_2012.0=2012.0,13PV_2013.0=2013.0,57BG_2011.0=2011.0">					
+                                    
+                    					<taxa id="TaxonSet.klebsiella_snps_no_outliers" spec="$(TaxonSet.spec=TaxonSet)">						
+                                            
+                        						<alignment idref="klebsiella_snps_no_outliers"/>						
+                                        
+                    					</taxa>					
+                                
+                				</trait>				
+                            
+                				<taxonset idref="TaxonSet.klebsiella_snps_no_outliers"/>				
+                        
+            			</tree>			
+                    
+            			<parameter id="clockRate.c:klebsiella_snps_no_outliers" spec="$(clockRate.spec=parameter.RealParameter)" name="$(clockRate.name=stateNode)">$(clockRate.None=1.0)</parameter>			
+                    
+            			<parameter id="popSize.t:klebsiella_snps_no_outliers" spec="$(popSize.spec=parameter.RealParameter)" name="$(popSize.name=stateNode)">$(popSize.None=0.3)</parameter>			
+                    
+            			<parameter id="gammaShape.s:klebsiella_snps_no_outliers" spec="$(gammaShape.spec=parameter.RealParameter)" name="$(gammaShape.name=stateNode)">$(gammaShape.None=1.0)</parameter>			
+                
+        		</state>		
+            
+        		<init id="RandomTree.t:klebsiella_snps_no_outliers" spec="$(RandomTree.spec=beast.evolution.tree.RandomTree)" estimate="$(RandomTree.estimate=false)" initial="$(RandomTree.initial=@Tree.t:klebsiella_snps_no_outliers)" taxa="$(RandomTree.taxa=@klebsiella_snps_no_outliers)">			
+                    
+            			<populationModel id="ConstantPopulation0.t:klebsiella_snps_no_outliers" spec="$(ConstantPopulation0.spec=ConstantPopulation)">				
+                            
+                				<parameter id="randomPopSize.t:klebsiella_snps_no_outliers" spec="$(randomPopSize.spec=parameter.RealParameter)" name="$(randomPopSize.name=popSize)">$(randomPopSize.None=1.0)</parameter>				
+                        
+            			</populationModel>			
+                
+        		</init>		
+            
+        		<distribution id="posterior" spec="$(posterior.spec=util.CompoundDistribution)">			
+                    
+            			<distribution id="prior" spec="$(prior.spec=util.CompoundDistribution)">				
+                            
+                				<distribution id="CoalescentConstant.t:klebsiella_snps_no_outliers" spec="$(CoalescentConstant.spec=Coalescent)">					
+                                    
+                    					<populationModel id="ConstantPopulation.t:klebsiella_snps_no_outliers" spec="$(ConstantPopulation.spec=ConstantPopulation)" popSize="$(ConstantPopulation.popSize=@popSize.t:klebsiella_snps_no_outliers)"/>					
+                                    
+                    					<treeIntervals id="TreeIntervals.t:klebsiella_snps_no_outliers" spec="$(TreeIntervals.spec=TreeIntervals)" tree="$(TreeIntervals.tree=@Tree.t:klebsiella_snps_no_outliers)"/>					
+                                
+                				</distribution>				
+                            
+                				<prior id="ClockPrior.c:klebsiella_snps_no_outliers" name="$(ClockPrior.name=distribution)" x="$(ClockPrior.x=@clockRate.c:klebsiella_snps_no_outliers)">					
+                                    
+                    					<Uniform id="Uniform.0" name="$(Uniform.name=distr)" upper="$(Uniform.upper=Infinity)"/>					
+                                
+                				</prior>				
+                            
+                				<prior id="GammaShapePrior.s:klebsiella_snps_no_outliers" name="$(GammaShapePrior.name=distribution)" x="$(GammaShapePrior.x=@gammaShape.s:klebsiella_snps_no_outliers)">					
+                                    
+                    					<Exponential id="Exponential.0" name="$(Exponential.name=distr)">						
+                                            
+                        						<parameter id="RealParameter.0" spec="$(RealParameter.spec=parameter.RealParameter)" estimate="$(RealParameter.estimate=false)" name="$(RealParameter.name=mean)">$(RealParameter.None=1.0)</parameter>						
+                                        
+                    					</Exponential>					
+                                
+                				</prior>				
+                            
+                				<prior id="PopSizePrior.t:klebsiella_snps_no_outliers" name="$(PopSizePrior.name=distribution)" x="$(PopSizePrior.x=@popSize.t:klebsiella_snps_no_outliers)">					
+                                    
+                    					<OneOnX id="OneOnX.1" name="$(OneOnX.name=distr)"/>					
+                                
+                				</prior>				
+                        
+            			</distribution>			
+                    
+            			<distribution id="likelihood" spec="$(likelihood.spec=util.CompoundDistribution)" useThreads="$(likelihood.useThreads=true)">				
+                            
+                				<distribution id="treeLikelihood.klebsiella_snps_no_outliers" spec="$(treeLikelihood.spec=ThreadedTreeLikelihood)" data="$(treeLikelihood.data=@klebsiella_snps_no_outliers)" tree="$(treeLikelihood.tree=@Tree.t:klebsiella_snps_no_outliers)">					
+                                    
+                    					<siteModel id="SiteModel.s:klebsiella_snps_no_outliers" spec="$(SiteModel.spec=SiteModel)" gammaCategoryCount="$(SiteModel.gammaCategoryCount=4)" shape="$(SiteModel.shape=@gammaShape.s:klebsiella_snps_no_outliers)">						
+                                            
+                        						<parameter id="mutationRate.s:klebsiella_snps_no_outliers" spec="$(mutationRate.spec=parameter.RealParameter)" estimate="$(mutationRate.estimate=false)" name="$(mutationRate.name=mutationRate)">$(mutationRate.None=1.0)</parameter>						
+                                            
+                        						<parameter id="proportionInvariant.s:klebsiella_snps_no_outliers" spec="$(proportionInvariant.spec=parameter.RealParameter)" estimate="$(proportionInvariant.estimate=false)" lower="$(proportionInvariant.lower=0.0)" name="$(proportionInvariant.name=proportionInvariant)" upper="$(proportionInvariant.upper=1.0)">$(proportionInvariant.None=0.0)</parameter>						
+                                            
+                        						<substModel id="JC69.s:klebsiella_snps_no_outliers" spec="$(JC69.spec=JukesCantor)"/>						
+                                        
+                    					</siteModel>					
+                                    
+                    					<branchRateModel id="StrictClock.c:klebsiella_snps_no_outliers" spec="$(StrictClock.spec=beast.evolution.branchratemodel.StrictClockModel)" clock.rate="$(StrictClock.clock.rate=@clockRate.c:klebsiella_snps_no_outliers)"/>					
+                                
+                				</distribution>				
+                        
+            			</distribution>			
+                
+        		</distribution>		
+            
+        		<operator id="StrictClockRateScaler.c:klebsiella_snps_no_outliers" spec="$(StrictClockRateScaler.spec=ScaleOperator)" parameter="$(StrictClockRateScaler.parameter=@clockRate.c:klebsiella_snps_no_outliers)" weight="$(StrictClockRateScaler.weight=3.0)"/>		
+            
+        		<operator id="strictClockUpDownOperator.c:klebsiella_snps_no_outliers" spec="$(strictClockUpDownOperator.spec=UpDownOperator)" scaleFactor="$(strictClockUpDownOperator.scaleFactor=0.75)" weight="$(strictClockUpDownOperator.weight=3.0)">			
+                    
+            			<up idref="clockRate.c:klebsiella_snps_no_outliers"/>			
+                    
+            			<down idref="Tree.t:klebsiella_snps_no_outliers"/>			
+                
+        		</operator>		
+            
+        		<operator id="CoalescentConstantTreeScaler.t:klebsiella_snps_no_outliers" spec="$(CoalescentConstantTreeScaler.spec=ScaleOperator)" scaleFactor="$(CoalescentConstantTreeScaler.scaleFactor=0.5)" tree="$(CoalescentConstantTreeScaler.tree=@Tree.t:klebsiella_snps_no_outliers)" weight="$(CoalescentConstantTreeScaler.weight=3.0)"/>		
+            
+        		<operator id="CoalescentConstantTreeRootScaler.t:klebsiella_snps_no_outliers" spec="$(CoalescentConstantTreeRootScaler.spec=ScaleOperator)" rootOnly="$(CoalescentConstantTreeRootScaler.rootOnly=true)" scaleFactor="$(CoalescentConstantTreeRootScaler.scaleFactor=0.5)" tree="$(CoalescentConstantTreeRootScaler.tree=@Tree.t:klebsiella_snps_no_outliers)" weight="$(CoalescentConstantTreeRootScaler.weight=3.0)"/>		
+            
+        		<operator id="CoalescentConstantUniformOperator.t:klebsiella_snps_no_outliers" spec="$(CoalescentConstantUniformOperator.spec=Uniform)" tree="$(CoalescentConstantUniformOperator.tree=@Tree.t:klebsiella_snps_no_outliers)" weight="$(CoalescentConstantUniformOperator.weight=30.0)"/>		
+            
+        		<operator id="CoalescentConstantSubtreeSlide.t:klebsiella_snps_no_outliers" spec="$(CoalescentConstantSubtreeSlide.spec=SubtreeSlide)" tree="$(CoalescentConstantSubtreeSlide.tree=@Tree.t:klebsiella_snps_no_outliers)" weight="$(CoalescentConstantSubtreeSlide.weight=15.0)"/>		
+            
+        		<operator id="CoalescentConstantNarrow.t:klebsiella_snps_no_outliers" spec="$(CoalescentConstantNarrow.spec=Exchange)" tree="$(CoalescentConstantNarrow.tree=@Tree.t:klebsiella_snps_no_outliers)" weight="$(CoalescentConstantNarrow.weight=15.0)"/>		
+            
+        		<operator id="CoalescentConstantWide.t:klebsiella_snps_no_outliers" spec="$(CoalescentConstantWide.spec=Exchange)" isNarrow="$(CoalescentConstantWide.isNarrow=false)" tree="$(CoalescentConstantWide.tree=@Tree.t:klebsiella_snps_no_outliers)" weight="$(CoalescentConstantWide.weight=3.0)"/>		
+            
+        		<operator id="CoalescentConstantWilsonBalding.t:klebsiella_snps_no_outliers" spec="$(CoalescentConstantWilsonBalding.spec=WilsonBalding)" tree="$(CoalescentConstantWilsonBalding.tree=@Tree.t:klebsiella_snps_no_outliers)" weight="$(CoalescentConstantWilsonBalding.weight=3.0)"/>		
+            
+        		<operator id="PopSizeScaler.t:klebsiella_snps_no_outliers" spec="$(PopSizeScaler.spec=ScaleOperator)" parameter="$(PopSizeScaler.parameter=@popSize.t:klebsiella_snps_no_outliers)" weight="$(PopSizeScaler.weight=3.0)"/>		
+            
+        		<operator id="gammaShapeScaler.s:klebsiella_snps_no_outliers" spec="$(gammaShapeScaler.spec=ScaleOperator)" parameter="$(gammaShapeScaler.parameter=@gammaShape.s:klebsiella_snps_no_outliers)" scaleFactor="$(gammaShapeScaler.scaleFactor=0.5)" weight="$(gammaShapeScaler.weight=0.1)"/>		
+            
+        		<logger id="tracelog" spec="$(tracelog.spec=Logger)" fileName="$(tracelog.fileName=klebsiella_snps_no_outliers.log)" logEvery="$(tracelog.logEvery=1000)" model="$(tracelog.model=@posterior)" sanitiseHeaders="$(tracelog.sanitiseHeaders=true)" sort="$(tracelog.sort=smart)">			
+                    
+            			<log idref="posterior"/>			
+                    
+            			<log idref="likelihood"/>			
+                    
+            			<log idref="prior"/>			
+                    
+            			<log idref="treeLikelihood.klebsiella_snps_no_outliers"/>			
+                    
+            			<log id="TreeHeight.t:klebsiella_snps_no_outliers" spec="$(TreeHeight.spec=beast.evolution.tree.TreeHeightLogger)" tree="$(TreeHeight.tree=@Tree.t:klebsiella_snps_no_outliers)"/>			
+                    
+            			<log idref="clockRate.c:klebsiella_snps_no_outliers"/>			
+                    
+            			<log idref="popSize.t:klebsiella_snps_no_outliers"/>			
+                    
+            			<log idref="CoalescentConstant.t:klebsiella_snps_no_outliers"/>			
+                    
+            			<log idref="gammaShape.s:klebsiella_snps_no_outliers"/>			
+                
+        		</logger>		
+            
+        		<logger id="screenlog" spec="$(screenlog.spec=Logger)" logEvery="$(screenlog.logEvery=1000)">			
+                    
+            			<log idref="posterior"/>			
+                    
+            			<log idref="likelihood"/>			
+                    
+            			<log idref="prior"/>			
+                
+        		</logger>		
+            
+        		<logger id="treelog.t:klebsiella_snps_no_outliers" spec="$(treelog.spec=Logger)" fileName="$(treelog.fileName=\$(tree).trees)" logEvery="$(treelog.logEvery=1000)" mode="$(treelog.mode=tree)">			
+                    
+            			<log id="TreeWithMetaDataLogger.t:klebsiella_snps_no_outliers" spec="$(TreeWithMetaDataLogger.spec=beast.evolution.tree.TreeWithMetaDataLogger)" tree="$(TreeWithMetaDataLogger.tree=@Tree.t:klebsiella_snps_no_outliers)"/>			
+                
+        		</logger>		
+            
+        		<operatorschedule id="OperatorSchedule" spec="$(OperatorSchedule.spec=OperatorSchedule)"/>		
+        
+    	</run>	
+    
+</beast>
