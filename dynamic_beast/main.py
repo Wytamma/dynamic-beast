@@ -8,10 +8,10 @@ app = typer.Typer()
 
 
 def make_dynamic(element, key):
-    id = element.get("id").split(".")[0]
+    _id = element.get("id")
     if key is None:
         value = element.text
-        s = f"{id}={value}"
+        s = f"{_id}={value}"
         element.text = f"$({s})"
     else:
         value = element.get(key)
@@ -24,7 +24,7 @@ def make_dynamic(element, key):
             # the way that defaults are passed means you can't use '=' in there values...
             # https://github.com/CompEvol/beast2/pull/991
             return None
-        s = f"{id}.{key}={value}"
+        s = f"{_id}.{key}={value}"
         element.set(key, f"$({s})")
 
 
