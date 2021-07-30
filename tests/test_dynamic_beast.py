@@ -11,8 +11,8 @@ runner = CliRunner()
 
 
 def test_app():
-    result = runner.invoke(app, ["data/BEAST.xml"])
+    result = runner.invoke(app, ["data/hcv_coal.xml"])
     assert result.exit_code == 0
     parsed = ET.fromstring(str(result.stdout))
-    expected = ET.parse("data/dynamic_BEAST.xml")
+    expected = ET.parse("data/dynamic_hcv_coal.xml")
     assert ET.tostring(parsed) == ET.tostring(expected.getroot())
