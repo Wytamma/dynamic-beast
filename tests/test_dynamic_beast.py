@@ -17,6 +17,7 @@ def test_app():
     expected = ET.parse("data/dynamic_hcv_coal.xml")
     assert ET.tostring(parsed) == ET.tostring(expected.getroot())
 
+
 def test_MC3():
     result = runner.invoke(app, ["--mc3", "data/hcv_bdsky.xml"])
     assert result.exit_code == 0

@@ -34,23 +34,25 @@ def make_all_dynamic(element):
     if element.tag == "parameter":
         make_dynamic(element, None)
 
+
 def add_mc3_options(run):
-    #<run id="mcmc" spec="beast.coupledMCMC.CoupledMCMC" chainLength="10000000" chains="4" target="0.234" logHeatedChains="true" deltaTemperature="0.1" optimise="true" resampleEvery="1000" >
+    # <run id="mcmc" spec="beast.coupledMCMC.CoupledMCMC" chainLength="10000000" chains="4" target="0.234" logHeatedChains="true" deltaTemperature="0.1" optimise="true" resampleEvery="1000" >
     mc3_options = {
-        'spec': 'beast.coupledMCMC.CoupledMCMC', 
-        'chains': '2', 
-        'target': '0.234', 
-        'logHeatedChains': 'false', 
-        'resampleEvery': '100', 
-        'tempDir': '',
-        'deltaTemperature': '0.1',
-        # 'maxTemperature': '',  # cannot be set to '' 
-        'optimise': 'true',
-        'optimiseDelay': '100',
-        'preSchedule': 'true'
-        }
+        "spec": "beast.coupledMCMC.CoupledMCMC",
+        "chains": "2",
+        "target": "0.234",
+        "logHeatedChains": "false",
+        "resampleEvery": "100",
+        "tempDir": "",
+        "deltaTemperature": "0.1",
+        # 'maxTemperature': '',  # cannot be set to ''
+        "optimise": "true",
+        "optimiseDelay": "100",
+        "preSchedule": "true",
+    }
     for option in mc3_options:
         run.set(option, mc3_options[option])
+
 
 @app.command()
 def main(
