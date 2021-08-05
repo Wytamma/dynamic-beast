@@ -30,14 +30,14 @@ beast dynamic_hcv_coal.xml
 To modify parameters at runtime use the `beast` definitions option `-D`.
 
 ```bash
-# change the chain length to 1000. 
+# Change the chain length to 1000. 
 beast -D 'mcmc.chainLength=1000' dynamic_hcv_coal.xml
 ``` 
 
 Multiple definitions can be passed at the same time.
 
 ```bash
-# change the treelog and tracelog sampling freq to 10000. 
+# Change the treelog and tracelog sampling freq to 10000. 
 beast -D 'treelog.logEvery=10000,tracelog.logEvery=10000' dynamic_hcv_coal.xml
 ``` 
 
