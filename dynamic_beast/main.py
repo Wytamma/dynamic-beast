@@ -34,11 +34,29 @@ def make_all_dynamic(element):
     if element.tag == "parameter":
         make_dynamic(element, None)
 
+def add_mc3_options(run):
+    #<run id="mcmc" spec="beast.coupledMCMC.CoupledMCMC" chainLength="10000000" chains="4" target="0.234" logHeatedChains="true" deltaTemperature="0.1" optimise="true" resampleEvery="1000" >
+    mc3_options = {
+        'spec': 'beast.coupledMCMC.CoupledMCMC', 
+        'chains': '2', 
+        'target': '0.234', 
+        'logHeatedChains': 'false', 
+        'resampleEvery': '100', 
+        'tempDir': '',
+        'deltaTemperature': '0.1',
+        # 'maxTemperature': '',  # cannot be set to '' 
+        'optimise': 'true',
+        'optimiseDelay': '100',
+        'preSchedule': 'true'
+        }
+    for option in mc3_options:
+        run.set(option, mc3_options[option])
 
 @app.command()
 def main(
     beast_xml: Path,
     outfile: Path = typer.Option(None, help="Path to save the dynamic BEAST XML file."),
+    mc3: bool = typer.Option(False, help="Add default MC3 options to XML file."),
 ):
     """
     Dynamic BEAST XML
@@ -46,6 +64,8 @@ def main(
     tree = ET.parse(beast_xml)
     root = tree.getroot()
     run = root.find("run")
+    if mc3:
+        add_mc3_options(run)
     for el in run.iter():
         if "idref" in el.keys():
             continue
