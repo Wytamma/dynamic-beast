@@ -17,13 +17,13 @@ pip install dynamic-beast
 
 Give `dynamic-beast` the path to a BEAST2 XML file and specify where to save the dynamic XML file (if `--outfile` is not specified XML will be printed to stdout).
 
-```
+```bash
 dynamic-beast --outfile dynamic_hcv_coal.xml hcv_coal.xml
 ```
 
 This will produce a `dynamic_hcv_coal.xml` file that can be used as standard in a BEAST analysis.
 
-```
+```bash
 beast dynamic_hcv_coal.xml
 ```
 
@@ -45,6 +45,17 @@ The full `id` of a parameter you'd like to set must be specified.
 
 ```bash 
 beast -D 'clockRate.c:hcv=7.9E-4' dynamic_hcv_coal.xml
+```
+
+### CoupledMCMC
+
+MC3 options for the BEAST package [CoupledMCMC](https://github.com/nicfel/CoupledMCMC) can be added by using the `--mc3` option. This will add the default CoupledMCMC options which can then be configured at runtime with `-D`. 
+
+```bash
+# Create dynamic MC3 XML 
+dynamic-beast --mc3 --outfile dynamic_mc3_hcv_coal.xml hcv_coal.xml
+# Configure MC3 with BEAST
+beast -D 'mcmc.chains=4' dynamic_mc3_hcv_coal.xml
 ```
 
 ## Explanation
