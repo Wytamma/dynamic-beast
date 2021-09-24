@@ -58,6 +58,17 @@ dynamic-beast --mc3 --outfile dynamic_mc3_hcv_coal.xml hcv_coal.xml
 beast -D 'mcmc.chains=4' dynamic_mc3_hcv_coal.xml
 ```
 
+### Path Sampling (Stepping Stone)
+
+Path sampling options for the package [model-selection](https://github.com/BEAST2-Dev/model-selection) can be add by using the `--gss` option. This will add the default model-selection options (e.g. stepping stone) which can then be configured at runtime with `-D`. 
+
+```bash
+# Create dynamic MC3 XML 
+dynamic-beast --gss --outfile dynamic_gss_hcv_coal.xml hcv_coal.xml
+# Configure MC3 with BEAST
+beast -D "gss.doNotRun=true,gss.rootdir=$(pwd)" data/dynamic_gss_hcv_coal.xml
+```
+
 ## Explanation
 
 The `dynamic-beast` tool replaces all the parameter values in the XML file with the `$(id.key=value)` format. The value variable is the default value that was initially specified in the XML file. However, the value can be redefined when running a BEAST analysis by making use of the [BEAST2 definitions option](https://www.beast2.org/2021/03/31/command-line-options.html#-d) (`-D`) that allows for user specified values. 
