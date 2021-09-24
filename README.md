@@ -63,9 +63,9 @@ beast -D 'mcmc.chains=4' dynamic_mc3_hcv_coal.xml
 Path sampling options for the package [model-selection](https://github.com/BEAST2-Dev/model-selection) can be add by using the `--gss` option. This will add the default model-selection options (e.g. stepping stone) which can then be configured at runtime with `-D`. 
 
 ```bash
-# Create dynamic MC3 XML 
+# Create dynamic GSS XML 
 dynamic-beast --gss --outfile dynamic_gss_hcv_coal.xml hcv_coal.xml
-# Configure MC3 with BEAST
+# Configure GSS with BEAST
 beast -D "gss.doNotRun=true,gss.rootdir=$(pwd)" dynamic_gss_hcv_coal.xml
 ```
 
