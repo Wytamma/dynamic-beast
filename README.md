@@ -66,7 +66,7 @@ Path sampling options for the package [model-selection](https://github.com/BEAST
 # Create dynamic MC3 XML 
 dynamic-beast --gss --outfile dynamic_gss_hcv_coal.xml hcv_coal.xml
 # Configure MC3 with BEAST
-beast -D "gss.doNotRun=true,gss.rootdir=$(pwd)" data/dynamic_gss_hcv_coal.xml
+beast -D "gss.doNotRun=true,gss.rootdir=$(pwd)" dynamic_gss_hcv_coal.xml
 ```
 
 ## Explanation
