@@ -52,9 +52,10 @@ def add_mc3_options(run):
     for option in mc3_options:
         run.set(option, mc3_options[option])
 
+
 def add_gss_options(root):
     # <run spec='beast.inference.PathSampler' chainLength="100000" alpha='0.3' rootdir='/tmp/step' burnInPercentage='80' preBurnin="50000" deleteOldLogs='true'>
-    # 
+    #
     gss_options = {
         "id": "gss",
         "spec": "beast.inference.PathSampler",
@@ -66,9 +67,10 @@ def add_gss_options(root):
         "deleteOldLogs": "false",
         "doNotRun": "false",
     }
-    gss = ET.SubElement(root, 'run', gss_options)
+    gss = ET.SubElement(root, "run", gss_options)
     gss.text = "\ncd $(dir)\njava -cp $(java.class.path) beast.app.beastapp.BeastMain $(resume/overwrite) -java -seed $(seed) beast.xml\n"
     return gss
+
 
 @app.command()
 def main(
@@ -88,7 +90,7 @@ def main(
     if gss:
         root.remove(run)
         gss = add_gss_options(root)
-        run.tag = 'mcmc'
+        run.tag = "mcmc"
         gss.append(run)
         run = gss
 
