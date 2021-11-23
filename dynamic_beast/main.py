@@ -53,11 +53,11 @@ def add_mc3_options(run):
         run.set(option, mc3_options[option])
 
 
-def add_gss_options(root):
+def add_ps_options(root):
     # <run spec='beast.inference.PathSampler' chainLength="100000" alpha='0.3' rootdir='/tmp/step' burnInPercentage='80' preBurnin="50000" deleteOldLogs='true'>
     #
-    gss_options = {
-        "id": "gss",
+    ps_options = {
+        "id": "ps",
         "spec": "beast.inference.PathSampler",
         "chainLength": "100000",
         "alpha": "0.3",
@@ -67,9 +67,9 @@ def add_gss_options(root):
         "deleteOldLogs": "false",
         "doNotRun": "false",
     }
-    gss = ET.SubElement(root, "run", gss_options)
-    gss.text = "\ncd $(dir)\njava -cp $(java.class.path) beast.app.beastapp.BeastMain $(resume/overwrite) -java -seed $(seed) beast.xml\n"
-    return gss
+    ps = ET.SubElement(root, "run", ps_options)
+    ps.text = "\ncd $(dir)\njava -cp $(java.class.path) beast.app.beastapp.BeastMain $(resume/overwrite) -java -seed $(seed) beast.xml\n"
+    return ps
 
 
 @app.command()
@@ -77,7 +77,7 @@ def main(
     beast_xml: Path,
     outfile: Path = typer.Option(None, help="Path to save the dynamic BEAST XML file."),
     mc3: bool = typer.Option(False, help="Add default MC3 options to XML file."),
-    gss: bool = typer.Option(False, help="Add default GSS options to XML file."),
+    ps: bool = typer.Option(False, help="Add default PathSampler options to XML file."),
 ):
     """
     Dynamic BEAST XML
@@ -87,12 +87,12 @@ def main(
     run = root.find("run")
     if mc3:
         add_mc3_options(run)
-    if gss:
+    if ps:
         root.remove(run)
-        gss = add_gss_options(root)
+        ps = add_ps_options(root)
         run.tag = "mcmc"
-        gss.append(run)
-        run = gss
+        ps.append(run)
+        run = ps
 
     for el in run.iter():
         if "idref" in el.keys():

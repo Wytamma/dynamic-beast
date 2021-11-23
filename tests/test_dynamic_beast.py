@@ -26,9 +26,9 @@ def test_MC3():
     assert ET.tostring(parsed) == ET.tostring(expected.getroot())
 
 
-def test_GSS():
-    result = runner.invoke(app, ["--gss", "data/hcv_coal.xml"])
+def test_PS():
+    result = runner.invoke(app, ["--ps", "data/hcv_coal.xml"])
     assert result.exit_code == 0
     parsed = ET.fromstring(str(result.stdout))
-    expected = ET.parse("data/dynamic_gss_hcv_coal.xml")
+    expected = ET.parse("data/dynamic_ps_hcv_coal.xml")
     assert ET.tostring(parsed) == ET.tostring(expected.getroot())
