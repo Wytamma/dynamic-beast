@@ -69,6 +69,14 @@ dynamic-beast --ps --outfile dynamic_ps_hcv_coal.xml hcv_coal.xml
 beast -D "ps.doNotRun=true,ps.rootdir=$(pwd)" dynamic_ps_hcv_coal.xml
 ```
 
+### Auto apply optimisation suggestion
+
+At the end of a analysis BEAST provides suggestions for optimising operators e.g. `Try setting scaleFactor to about 0.96`. A path to the output file can be provided to the `--optimise` flag and the suggestions will automatically be extracted and applied to the generated dynamic XML file. 
+
+```bash
+dynamic-beast --optimise hcv_coal.out --outfile dynamic_hcv_coal.xml hcv_coal.xml
+```
+
 ## Explanation
 
 The `dynamic-beast` tool replaces all the parameter values in the XML file with the `$(id.key=value)` format. The value variable is the default value that was initially specified in the XML file. However, the value can be redefined when running a BEAST analysis by making use of the [BEAST2 definitions option](https://www.beast2.org/2021/03/31/command-line-options.html#-d) (`-D`) that allows for user specified values. 
