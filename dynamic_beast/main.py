@@ -71,22 +71,23 @@ def add_ps_options(root):
     ps.text = "\ncd $(dir)\njava -cp $(java.class.path) beast.app.beastapp.BeastMain $(resume/overwrite) -java -seed $(seed) beast.xml\n"
     return ps
 
+
 def apply_optimise(path_to_output: Path, run):
     ops = []
     with open(path_to_output) as output:
-        # extract optimisetion lines 
+        # extract optimisetion lines
         for line in output:
-            if line.startswith('Operator'):
+            if line.startswith("Operator"):
                 break
         for line in output:
-            if line == '\n':
+            if line == "\n":
                 break
             ops.append(line)
     for l in ops:
-        if 'Try' not in l:
+        if "Try" not in l:
             continue
         ops_values = l.split()
-        op_id = ops_values[0].split('(')[1][:-1]
+        op_id = ops_values[0].split("(")[1][:-1]
         key = ops_values[-4]
         value = ops_values[-1]
         op_els = run.findall(f".//*[@id='{op_id}']")
@@ -103,7 +104,10 @@ def main(
     outfile: Path = typer.Option(None, help="Path to save the dynamic BEAST XML file."),
     mc3: bool = typer.Option(False, help="Add default MC3 options to XML file."),
     ps: bool = typer.Option(False, help="Add default PathSampler options to XML file."),
-    optimise: Path = typer.Option(None, help="Path to previous run output file. Operator optimisations will be extracted."),
+    optimise: Path = typer.Option(
+        None,
+        help="Path to previous run output file. Operator optimisations will be extracted.",
+    ),
 ):
     """
     Dynamic BEAST XML

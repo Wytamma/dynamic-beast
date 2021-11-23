@@ -33,8 +33,12 @@ def test_PS():
     expected = ET.parse("data/dynamic_ps_hcv_coal.xml")
     assert ET.tostring(parsed) == ET.tostring(expected.getroot())
 
+
 def test_optimise():
-    result = runner.invoke(app, ["--optimise", "data/Heterochronous_H3N2.out", "data/Heterochronous_H3N2.xml"])
+    result = runner.invoke(
+        app,
+        ["--optimise", "data/Heterochronous_H3N2.out", "data/Heterochronous_H3N2.xml"],
+    )
     assert result.exit_code == 0
     parsed = ET.fromstring(str(result.stdout))
     expected = ET.parse("data/Heterochronous_H3N2_optimised.xml")
