@@ -71,7 +71,7 @@ beast -D "ps.doNotRun=true,ps.rootdir=$(pwd)" dynamic_ps_hcv_coal.xml
 
 ### Auto apply optimisation suggestion
 
-At the end of a analysis BEAST provides suggestions for optimising operators e.g. `Try setting scaleFactor to about 0.96`. A path to the output file can be provided to the `--optimise` flag and the suggestions will automatically be extracted and applied to the generated dynamic XML file. 
+At the end of a analysis BEAST provides suggestions for optimising operators e.g. `Try setting scaleFactor to about 0.96`. See the end of the [example file](https://github.com/Wytamma/dynamic-beast/blob/master/data/Heterochronous_H3N2.out). A path to the output file can be provided to the `--optimise` flag and the suggestions will automatically be extracted and applied to the generated dynamic XML file. 
 
 ```bash
 dynamic-beast --optimise hcv_coal.out --outfile dynamic_hcv_coal.xml hcv_coal.xml
