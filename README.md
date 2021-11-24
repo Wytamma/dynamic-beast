@@ -77,7 +77,7 @@ At the end of a analysis BEAST provides suggestions for optimising operators e.g
 dynamic-beast --optimise hcv_coal.out hcv_coal.xml > dynamic_hcv_coal.xml
 ```
 
-Dynamic-beast will look for a line starting with `Operator` and extract the suggestion fromt he lines that follow. So if you make your own `.out` file (i.e. by copy-pasting the BEAST output) you need to make sure the file starts with `Operator` on the first line. 
+Dynamic-beast will look for a line starting with `Operator` and extract the suggestion from the lines that follow. So if you make your own `.out` file (i.e. by copy-pasting the BEAST output) you need to make sure the file starts with `Operator` on the first line. 
 
 ## Explanation
 
