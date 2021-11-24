@@ -18,7 +18,7 @@ pip install dynamic-beast
 Give `dynamic-beast` the path to a BEAST2 XML file and specify where to save the dynamic XML file (if `--outfile` is not specified XML will be printed to stdout).
 
 ```bash
-dynamic-beast --outfile dynamic_hcv_coal.xml hcv_coal.xml
+dynamic-beast hcv_coal.xml > dynamic_hcv_coal.xml
 ```
 
 This will produce a `dynamic_hcv_coal.xml` file that can be used as standard in a BEAST analysis.
@@ -53,7 +53,7 @@ MC3 options for the BEAST package [CoupledMCMC](https://github.com/nicfel/Couple
 
 ```bash
 # Create dynamic MC3 XML 
-dynamic-beast --mc3 --outfile dynamic_mc3_hcv_coal.xml hcv_coal.xml
+dynamic-beast --mc3 hcv_coal.xml > dynamic_mc3_hcv_coal.xml 
 # Configure MC3 with BEAST
 beast -D 'mcmc.chains=4' dynamic_mc3_hcv_coal.xml
 ```
@@ -64,7 +64,7 @@ Path sampling options for the package [model-selection](https://github.com/BEAST
 
 ```bash
 # Create dynamic Path Sampling XML 
-dynamic-beast --ps --outfile dynamic_ps_hcv_coal.xml hcv_coal.xml
+dynamic-beast --ps hcv_coal.xml > dynamic_ps_hcv_coal.xml
 # Configure Path Sampling with BEAST
 beast -D "ps.doNotRun=true,ps.rootdir=$(pwd)" dynamic_ps_hcv_coal.xml
 ```
@@ -74,7 +74,7 @@ beast -D "ps.doNotRun=true,ps.rootdir=$(pwd)" dynamic_ps_hcv_coal.xml
 At the end of a analysis BEAST provides suggestions for optimising operators e.g. `Try setting scaleFactor to about 0.96`. See the end of the [example file](https://github.com/Wytamma/dynamic-beast/blob/master/data/Heterochronous_H3N2.out). A path to the output file can be provided to the `--optimise` flag and the suggestions will automatically be extracted and applied to the generated dynamic XML file. 
 
 ```bash
-dynamic-beast --optimise hcv_coal.out --outfile dynamic_hcv_coal.xml hcv_coal.xml
+dynamic-beast --optimise hcv_coal.out hcv_coal.xml > dynamic_hcv_coal.xml
 ```
 
 ## Explanation
