@@ -77,6 +77,8 @@ At the end of a analysis BEAST provides suggestions for optimising operators e.g
 dynamic-beast --optimise hcv_coal.out hcv_coal.xml > dynamic_hcv_coal.xml
 ```
 
+Dynamic-beast will look for a line starting with `Operator` and extract the suggestion fromt he lines that follow. So if you make your own `.out` file (i.e. by copy-pasting the BEAST output) you need to make sure the file starts with `Operator` on the first line. 
+
 ## Explanation
 
 The `dynamic-beast` tool replaces all the parameter values in the XML file with the `$(id.key=value)` format. The value variable is the default value that was initially specified in the XML file. However, the value can be redefined when running a BEAST analysis by making use of the [BEAST2 definitions option](https://www.beast2.org/2021/03/31/command-line-options.html#-d) (`-D`) that allows for user specified values. 
