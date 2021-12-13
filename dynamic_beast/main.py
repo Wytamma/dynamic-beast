@@ -58,6 +58,7 @@ def add_ps_options(root):
     #
     ps_options = {
         "id": "ps",
+        "nrOfSteps": "8",
         "spec": "beast.inference.PathSampler",
         "chainLength": "100000",
         "alpha": "0.3",

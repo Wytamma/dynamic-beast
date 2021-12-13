@@ -87,7 +87,7 @@
 	<map name="OneOnX">beast.math.distributions.OneOnX</map>	
 
 
-	<run id="ps" spec="$(ps.spec=beast.inference.PathSampler)" chainLength="$(ps.chainLength=100000)" alpha="$(ps.alpha=0.3)" rootdir="$(ps.rootdir=/tmp)" burnInPercentage="$(ps.burnInPercentage=50)" preBurnin="$(ps.preBurnin=100000)" deleteOldLogs="$(ps.deleteOldLogs=false)" doNotRun="$(ps.doNotRun=false)">		
+	<run id="ps" nrOfSteps="$(ps.nrOfSteps=8)" spec="$(ps.spec=beast.inference.PathSampler)" chainLength="$(ps.chainLength=100000)" alpha="$(ps.alpha=0.3)" rootdir="$(ps.rootdir=/tmp)" burnInPercentage="$(ps.burnInPercentage=50)" preBurnin="$(ps.preBurnin=100000)" deleteOldLogs="$(ps.deleteOldLogs=false)" doNotRun="$(ps.doNotRun=false)">		
 cd $(dir)
 java -cp $(java.class.path) beast.app.beastapp.BeastMain $(resume/overwrite) -java -seed $(seed) beast.xml
 		<mcmc id="mcmc" spec="$(mcmc.spec=MCMC)" chainLength="$(mcmc.chainLength=3000000)">			
