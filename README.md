@@ -53,6 +53,8 @@ The `dynamic-beast` tool replaces all the parameter values in the XML file with 
 
 To ensure reproducibility you should recreate static XML files of runs using dynamic parameters, this can be achieved using the `-DFout` argument e.g., `beast -D 'clockRate.c:hcv=7.9E-4' -DFout static_hcv_coal.xml dynamic_hcv_coal.xml`. 
 
+## Adtional features 
+
 ### CoupledMCMC
 
 MC3 options for the BEAST package [CoupledMCMC](https://github.com/nicfel/CoupledMCMC) can be added by using the `--mc3` option. This will add the default CoupledMCMC options which can then be configured at runtime with `-D`. 
