@@ -69,6 +69,18 @@ dynamic-beast --ps hcv_coal.xml > dynamic_ps_hcv_coal.xml
 beast -D "ps.doNotRun=true,ps.rootdir=$(pwd)" dynamic_ps_hcv_coal.xml
 ```
 
+### Multi threaded nested sampling
+
+Multi threaded nested sampling for the package [nested-sampling
+](https://github.com/BEAST2-Dev/nested-sampling) can be add by using the `--ns` option. This will add the default model-selection options which can then be configured at runtime with `-D`. 
+
+```bash
+# Create dynamic Nested Sampling XML 
+dynamic-beast --ns hcv_coal.xml > dynamic_ns_hcv_coal.xml
+# Configure Path Sampling with BEAST
+beast -D "mcmc.threads=6,mcmc.chainLength=40000" dynamic_ns_hcv_coal.xml
+```
+
 ### Auto apply optimisation suggestion
 
 At the end of a analysis BEAST provides suggestions for optimising operators e.g. `Try setting scaleFactor to about 0.96`. See the end of the [example file](https://github.com/Wytamma/dynamic-beast/blob/master/data/Heterochronous_H3N2.out). A path to the output file can be provided to the `--optimise` flag and the suggestions will automatically be extracted and applied to the generated dynamic XML file. 
