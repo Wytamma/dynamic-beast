@@ -47,6 +47,14 @@ The full `id` of a parameter you'd like to set must be specified.
 beast -D 'clockRate.c:hcv=7.9E-4' dynamic_hcv_coal.xml
 ```
 
+## Explanation
+
+The `dynamic-beast` tool replaces all the parameter values in the XML file with the `$(id.key=value)` format. The value variable is the default value that was initially specified in the XML file. However, the value can be redefined when running a BEAST analysis by making use of the [BEAST2 definitions option](https://www.beast2.org/2021/03/31/command-line-options.html#-d) (`-D`) that allows for user specified values. 
+
+To ensure reproducibility you should recreate static XML files of runs using dynamic parameters, this can be achieved using the `-DFout` argument e.g., `beast -D 'clockRate.c:hcv=7.9E-4' -DFout static_hcv_coal.xml dynamic_hcv_coal.xml`. 
+
+## Addtional features 
+
 ### CoupledMCMC
 
 MC3 options for the BEAST package [CoupledMCMC](https://github.com/nicfel/CoupledMCMC) can be added by using the `--mc3` option. This will add the default CoupledMCMC options which can then be configured at runtime with `-D`. 
@@ -83,16 +91,10 @@ beast -D "mcmc.threads=6,mcmc.chainLength=40000" dynamic_ns_hcv_coal.xml
 
 ### Auto apply optimisation suggestion
 
-At the end of a analysis BEAST provides suggestions for optimising operators e.g. `Try setting scaleFactor to about 0.96`. See the end of the [example file](https://github.com/Wytamma/dynamic-beast/blob/master/data/Heterochronous_H3N2.out). A path to the output file can be provided to the `--optimise` flag and the suggestions will automatically be extracted and applied to the generated dynamic XML file. 
+At the end of a analysis BEAST provides suggestions for optimising operators e.g. `Try setting scaleFactor to about 0.96`. See the end of the [example file](https://github.com/Wytamma/dynamic-beast/blob/master/data/Heterochronous_H3N2.out#L5366). A path to the output file can be provided to the `--optimise` flag and the suggestions will automatically be extracted and applied to the generated dynamic XML file. 
 
 ```bash
 dynamic-beast --optimise hcv_coal.out hcv_coal.xml > dynamic_hcv_coal.xml
 ```
 
 Dynamic-beast will look for a line starting with `Operator` and extract the suggestion from the lines that follow. So if you make your own `.out` file (i.e. by copy-pasting the BEAST output) you need to make sure the file starts with `Operator` on the first line. 
-
-## Explanation
-
-The `dynamic-beast` tool replaces all the parameter values in the XML file with the `$(id.key=value)` format. The value variable is the default value that was initially specified in the XML file. However, the value can be redefined when running a BEAST analysis by making use of the [BEAST2 definitions option](https://www.beast2.org/2021/03/31/command-line-options.html#-d) (`-D`) that allows for user specified values. 
-
-To ensure reproducibility you should recreate static XML files of runs using dynamic parameters, this can be achieved using the `-DFout` argument e.g., `beast -D 'clockRate.c:hcv=7.9E-4' -DFout static_hcv_coal.xml dynamic_hcv_coal.xml`. 
