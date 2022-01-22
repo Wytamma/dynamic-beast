@@ -34,7 +34,7 @@ def test_PS():
     assert ET.tostring(parsed) == ET.tostring(expected.getroot())
 
 
-def test_PS():
+def test_NS():
     result = runner.invoke(app, ["--ns", "data/hcv_coal.xml"])
     assert result.exit_code == 0
     parsed = ET.fromstring(str(result.stdout))
