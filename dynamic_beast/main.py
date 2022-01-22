@@ -55,7 +55,6 @@ def add_mc3_options(run):
 
 def add_ps_options(root):
     # <run spec='beast.inference.PathSampler' chainLength="100000" alpha='0.3' rootdir='/tmp/step' burnInPercentage='80' preBurnin="50000" deleteOldLogs='true'>
-    #
     ps_options = {
         "id": "ps",
         "nrOfSteps": "8",
@@ -73,10 +72,25 @@ def add_ps_options(root):
     return ps
 
 
+def add_ns_options(run):
+    # <run id="mcmc" spec="beast.gss.NS" chainLength="20000" particleCount="1" subChainLength="5000" epsilon="1e-12">
+    ns_options = {
+        "id": "mcmc",
+        "spec": "beast.gss.MultiThreadedNS",
+        "threads": "4",
+        "chainLength": "20000",
+        "particleCount": "1",
+        "subChainLength": "5000",
+        "epsilon": "1e-12",
+    }
+    for option in ns_options:
+        run.set(option, ns_options[option])
+
+
 def apply_optimise(path_to_output: Path, run):
     ops = []
     with open(path_to_output) as output:
-        # extract optimisetion lines
+        # extract optimization lines
         for line in output:
             if line.startswith("Operator"):
                 break
@@ -105,6 +119,9 @@ def main(
     outfile: Path = typer.Option(None, help="Path to save the dynamic BEAST XML file."),
     mc3: bool = typer.Option(False, help="Add default MC3 options to XML file."),
     ps: bool = typer.Option(False, help="Add default PathSampler options to XML file."),
+    ns: bool = typer.Option(
+        False, help="Add default Multi threaded nested sampling options to XML file."
+    ),
     optimise: Path = typer.Option(
         None,
         help="Path to previous run output file. Operator optimisations will be extracted.",
@@ -124,6 +141,8 @@ def main(
         run.tag = "mcmc"
         ps.append(run)
         run = ps
+    if ns:
+        add_ns_options(run)
 
     for el in run.iter():
         if "idref" in el.keys():

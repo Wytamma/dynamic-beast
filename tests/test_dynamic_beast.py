@@ -34,6 +34,14 @@ def test_PS():
     assert ET.tostring(parsed) == ET.tostring(expected.getroot())
 
 
+def test_PS():
+    result = runner.invoke(app, ["--ns", "data/hcv_coal.xml"])
+    assert result.exit_code == 0
+    parsed = ET.fromstring(str(result.stdout))
+    expected = ET.parse("data/dynamic_ns_hcv_coal.xml")
+    assert ET.tostring(parsed) == ET.tostring(expected.getroot())
+
+
 def test_optimise():
     result = runner.invoke(
         app,

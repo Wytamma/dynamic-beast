@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "dynamic-beast"
-version = "1.6.1"
+version = "1.7.0"
 description = ""
 authors = ["Wytamma Wirth <wytamma.wirth@me.com>"]
 readme = "README.md"
@@ -20,3 +20,8 @@ pytest-cov = "^2.12.1"
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.coverage.run]
+omit = [
+    "dynamic_beast/__main__.py",
+    ]
