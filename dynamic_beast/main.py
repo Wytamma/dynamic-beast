@@ -112,7 +112,7 @@ def apply_optimise(path_to_output: Path, run):
         s = f"{op_id}.{key}={value}"
         op_el.set(key, f"$({s})")
 
-def create_dynamic_xml(beast_xml, outfile, mc3, ps, ns, optimise):
+def create_dynamic_xml(beast_xml, outfile=None, mc3=False, ps=False, ns=False, optimise=None):
     tree = ET.parse(beast_xml)
     root = tree.getroot()
     run = root.find("run")
