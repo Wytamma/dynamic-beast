@@ -4,7 +4,7 @@ import xml.etree.ElementTree as ET
 
 
 def test_version():
-    assert __version__ == "1.7.2"
+    assert __version__ == "1.7.3"
 
 
 runner = CliRunner()
