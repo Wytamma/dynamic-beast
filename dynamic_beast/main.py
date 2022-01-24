@@ -112,24 +112,7 @@ def apply_optimise(path_to_output: Path, run):
         s = f"{op_id}.{key}={value}"
         op_el.set(key, f"$({s})")
 
-
-@app.command()
-def main(
-    beast_xml: Path,
-    outfile: Path = typer.Option(None, help="Path to save the dynamic BEAST XML file."),
-    mc3: bool = typer.Option(False, help="Add default MC3 options to XML file."),
-    ps: bool = typer.Option(False, help="Add default PathSampler options to XML file."),
-    ns: bool = typer.Option(
-        False, help="Add default Multi threaded nested sampling options to XML file."
-    ),
-    optimise: Path = typer.Option(
-        None,
-        help="Path to previous run output file. Operator optimisations will be extracted.",
-    ),
-):
-    """
-    Dynamic BEAST XML
-    """
+def create_dynamic_xml(beast_xml, outfile, mc3, ps, ns, optimise):
     tree = ET.parse(beast_xml)
     root = tree.getroot()
     run = root.find("run")
@@ -157,3 +140,22 @@ def main(
     else:
         xmlstr = minidom.parseString(ET.tostring(root)).toprettyxml(newl="")
         typer.echo(xmlstr)
+
+@app.command()
+def main(
+    beast_xml: Path,
+    outfile: Path = typer.Option(None, help="Path to save the dynamic BEAST XML file."),
+    mc3: bool = typer.Option(False, help="Add default MC3 options to XML file."),
+    ps: bool = typer.Option(False, help="Add default PathSampler options to XML file."),
+    ns: bool = typer.Option(
+        False, help="Add default Multi threaded nested sampling options to XML file."
+    ),
+    optimise: Path = typer.Option(
+        None,
+        help="Path to previous run output file. Operator optimisations will be extracted.",
+    ),
+):
+    """
+    Dynamic BEAST XML
+    """
+    create_dynamic_xml(beast_xml, outfile, mc3, ps, ns, optimise)
