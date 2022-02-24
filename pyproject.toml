@@ -10,7 +10,7 @@ dynamic-beast = "dynamic_beast.main:app"
 
 [tool.poetry.dependencies]
 python = ">=3.6.2,<4.0"
-typer = {extras = ["all"], version = "^0.3.2"}
+typer = {extras = ["all"], version = ">=0.3.2"}
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
