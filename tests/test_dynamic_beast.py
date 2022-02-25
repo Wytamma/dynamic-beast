@@ -1,6 +1,7 @@
 from dynamic_beast import __version__, app
 from typer.testing import CliRunner
 import xml.etree.ElementTree as ET
+import filecmp
 
 
 def test_version():
@@ -51,3 +52,11 @@ def test_optimise():
     parsed = ET.fromstring(str(result.stdout))
     expected = ET.parse("data/Heterochronous_H3N2_optimised.xml")
     assert ET.tostring(parsed) == ET.tostring(expected.getroot())
+
+
+def test_json_out():
+    result = runner.invoke(
+        app,
+        ["--json-out", "data/hcv_coal.json", "data/hcv_coal.xml"],
+    )
+    assert filecmp.cmp("data/hcv_coal.json", "data/test.json") == True

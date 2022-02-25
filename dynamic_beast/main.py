@@ -2,6 +2,7 @@ import typer
 from pathlib import Path
 import xml.etree.ElementTree as ET
 from xml.dom import minidom
+import json
 
 app = typer.Typer()
 
@@ -10,8 +11,10 @@ def make_dynamic(element, key):
     _id = element.get("id")
     if key is None:
         value = element.text
-        s = f"{_id}={value}"
-        element.text = f"$({s})"
+        if value:
+            s = f"{_id}={value}"
+            element.text = f"$({s})"
+            return (_id, value)
     else:
         value = element.get(key)
         if "$" in value:
@@ -23,15 +26,20 @@ def make_dynamic(element, key):
             # the way that defaults are passed means you can't use '=' in there values...
             # https://github.com/CompEvol/beast2/pull/991
             return None
-        s = f"{_id}.{key}={value}"
+        _id = f"{_id}.{key}"
+        s = f"{_id}={value}"
         element.set(key, f"$({s})")
+        return (_id, value)
 
 
 def make_all_dynamic(element):
-    for key in filter(lambda k: k != "id", element.keys()):
+    json_vars = [
         make_dynamic(element, key)
+        for key in filter(lambda k: k != "id", element.keys())
+    ]
     if element.tag == "parameter":
-        make_dynamic(element, None)
+        json_vars.append(make_dynamic(element, None))
+    return json_vars
 
 
 def add_mc3_options(run):
@@ -114,7 +122,7 @@ def apply_optimise(path_to_output: Path, run):
 
 
 def create_dynamic_xml(
-    beast_xml, outfile=None, mc3=False, ps=False, ns=False, optimise=None
+    beast_xml, outfile=None, mc3=False, ps=False, ns=False, optimise=None, json_out=None
 ):
     tree = ET.parse(beast_xml)
     root = tree.getroot()
@@ -130,10 +138,11 @@ def create_dynamic_xml(
     if ns:
         add_ns_options(run)
 
+    json_vars = []
     for el in run.iter():
         if "idref" in el.keys():
             continue
-        make_all_dynamic(el)
+        json_vars += make_all_dynamic(el)
 
     if optimise:
         apply_optimise(optimise, run)
@@ -143,6 +152,10 @@ def create_dynamic_xml(
     else:
         xmlstr = minidom.parseString(ET.tostring(root)).toprettyxml(newl="")
         typer.echo(xmlstr)
+    if json_out:
+        json_vars = [v for v in json_vars if v]
+        with open(json_out, "w") as f:
+            json.dump(dict(json_vars), f, ensure_ascii=False, indent=4)
 
 
 @app.command()
@@ -158,8 +171,12 @@ def main(
         None,
         help="Path to previous run output file. Operator optimisations will be extracted.",
     ),
+    json_out: Path = typer.Option(
+        None,
+        help="Create a json file of all dynamic variables. For use with the -DF beast argument.",
+    ),
 ):
     """
     Dynamic BEAST XML
     """
-    create_dynamic_xml(beast_xml, outfile, mc3, ps, ns, optimise)
+    create_dynamic_xml(beast_xml, outfile, mc3, ps, ns, optimise, json_out)
