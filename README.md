@@ -77,9 +77,9 @@ dynamic-beast --ps hcv_coal.xml > dynamic_ps_hcv_coal.xml
 beast -D "ps.doNotRun=true,ps.rootdir=$(pwd)" dynamic_ps_hcv_coal.xml
 ```
 
-### Multi threaded nested sampling
+### Nested sampling
 
-Multi threaded nested sampling for the package [nested-sampling
+Nested sampling for the package [nested-sampling
 ](https://github.com/BEAST2-Dev/nested-sampling) can be add by using the `--ns` option. This will add the default model-selection options which can then be configured at runtime with `-D`. 
 
 ```bash

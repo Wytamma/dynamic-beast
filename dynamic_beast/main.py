@@ -84,8 +84,7 @@ def add_ns_options(run):
     # <run id="mcmc" spec="beast.gss.NS" chainLength="20000" particleCount="1" subChainLength="5000" epsilon="1e-12">
     ns_options = {
         "id": "mcmc",
-        "spec": "beast.gss.MultiThreadedNS",
-        "threads": "4",
+        "spec": "beast.gss.NS",
         "chainLength": "20000",
         "particleCount": "1",
         "subChainLength": "5000",
@@ -165,7 +164,7 @@ def main(
     mc3: bool = typer.Option(False, help="Add default MC3 options to XML file."),
     ps: bool = typer.Option(False, help="Add default PathSampler options to XML file."),
     ns: bool = typer.Option(
-        False, help="Add default Multi threaded nested sampling options to XML file."
+        False, help="Add default nested sampling options to XML file."
     ),
     optimise: Path = typer.Option(
         None,
