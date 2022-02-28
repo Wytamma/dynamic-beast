@@ -98,3 +98,20 @@ dynamic-beast --optimise hcv_coal.out hcv_coal.xml > dynamic_hcv_coal.xml
 ```
 
 Dynamic-beast will look for a line starting with `Operator` and extract the suggestion from the lines that follow. So if you make your own `.out` file (i.e. by copy-pasting the BEAST output) you need to make sure the file starts with `Operator` on the first line. 
+
+### Produce a json file of dynamic variables 
+
+Use the `--json-out` file to produce a json file for all the dynamic variables. 
+
+```bash
+dynamic-beast --json-out hcv_coal.json hcv_coal.xml > dynamic_hcv_coal.xml
+```
+
+Can be used with the beast -DF flag
+
+```bash
+beast -DF hcv_coal.json dynamic_hcv_coal.xml
+```
+
+
+
