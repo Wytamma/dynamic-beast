@@ -89,6 +89,11 @@ def add_ns_options(run):
         "particleCount": "1",
         "subChainLength": "5000",
         "epsilon": "1e-12",
+        "stopFactor": '2.0',
+        "minSteps": "0",
+        "autoSubChainLength": "false",
+        "paramCountFactor": "10",
+        "producePosterior": "true"
     }
     for option in ns_options:
         run.set(option, ns_options[option])

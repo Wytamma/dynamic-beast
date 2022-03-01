@@ -87,7 +87,7 @@
 	<map name="OneOnX">beast.math.distributions.OneOnX</map>	
 
 
-	<run id="mcmc" spec="$(mcmc.spec=beast.gss.NS)" chainLength="$(mcmc.chainLength=20000)" particleCount="$(mcmc.particleCount=1)" subChainLength="$(mcmc.subChainLength=5000)" epsilon="$(mcmc.epsilon=1e-12)">		
+	<run id="mcmc" spec="$(mcmc.spec=beast.gss.NS)" chainLength="$(mcmc.chainLength=20000)" particleCount="$(mcmc.particleCount=1)" subChainLength="$(mcmc.subChainLength=5000)" epsilon="$(mcmc.epsilon=1e-12)" stopFactor="$(mcmc.stopFactor=2.0)" minSteps="$(mcmc.minSteps=0)" autoSubChainLength="$(mcmc.autoSubChainLength=false)" paramCountFactor="$(mcmc.paramCountFactor=10)" producePosterior="$(mcmc.producePosterior=true)">		
     		<state id="state" spec="$(state.spec=State)" storeEvery="$(state.storeEvery=5000)">			
         			<tree id="Tree.t:hcv" spec="$(Tree.t:hcv.spec=beast.evolution.tree.Tree)" name="$(Tree.t:hcv.name=stateNode)">				
             				<taxonset id="TaxonSet.hcv" spec="$(TaxonSet.hcv.spec=TaxonSet)">					
